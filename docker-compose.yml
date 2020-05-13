@@ -1,0 +1,9 @@
+version: '3'
+services:
+  color_me:
+    build: .
+    tty: true
+    volumes: 
+      - ./:/var/www/html
+    ports: 
+      - "5000:80"

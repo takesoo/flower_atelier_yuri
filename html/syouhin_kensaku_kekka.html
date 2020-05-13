@@ -1,0 +1,46 @@
+<div id="main"><ul id="pankuzu">
+        <li><a href="./">HOME</a></li>
+        <li> &gt;&gt; 検索結果</li>
+      </ul>
+      <h2>検索結果</h2>
+      <div class="search_result">
+検索条件　[カテゴリー]：<{if $search_category!=""}><strong><{$search_category}></strong><{/if}>　
+[検索文字]：<{if $search_keyword!=""}><strong><{$search_keyword}></strong><{/if}><br />
+ヒット件数：<strong><{$productlist_num}></strong>件
+</div>
+
+
+
+<{if $productlist_num != 0}>
+	
+	<div class="indent">
+	<span>並び順を変更</span>[
+	<{if $productlist_sort_now != ""}><span><a href="<{$productlist_sort_def}>">おすすめ順</a></span><{else}><strong>おすすめ順</strong><{/if}>
+	|<{if $productlist_sort_now != "p"}><span><a href="<{$productlist_sort_price}>">価格順</a></span><{else}><strong>価格順</strong><{/if}>
+	|<{if $productlist_sort_now != "n"}><span><a href="<{$productlist_sort_new}>">新着順</a></span><{else}><strong>新着順</strong><{/if}>
+	]
+	</div>
+	<div class="search_box">全 [<span><{$productlist_num}></span>] 商品中 [<span><{$productlist_snum}></span>-<span><{$productlist_enum}></span>] 商品を表示しています。</div>
+
+      <div class="item_box4">
+	  <{section name=num loop=$productlist}>
+	  <div class="item_box5"><div class="item_pic"><{if $productlist[num].img_url != ""}><a href="<{$productlist[num].link_url}>" /><img src="<{$productlist[num].img_url}>" class="border" alt="<{$productlist[num].name}>" /></a><{else}><a href="<{$productlist[num].link_url}>" /><img src="http://img.shop-pro.jp/tmpl_img/17/noimg.gif" class="border" /></a><{/if}></div>
+<div class="item_text1"><strong><a href="<{$productlist[num].link_url}>" /><{$productlist[num].name}></a></strong><br />
+値段 <span class="font_b"><{$productlist[num].price}></span>
+<{if $productlist[num].s_expl <> ""}><br /><{$productlist[num].s_expl}><{/if}></div></div>
+		
+	  <!-- 4個で改行(最後は含まない) -->
+			<{if $smarty.section.num.iteration % 4 == 0 and $smarty.section.num.last == false}>
+<div class="clear"></div>
+			<{/if}>
+	  <{/section}>
+<div class="clear"></div>
+	</div>
+	<div class="search_box">全 [<span><{$productlist_num}></span>] 商品中 [<span><{$productlist_snum}></span>-<span><{$productlist_enum}></span>] 商品を表示しています。</div>
+	
+	<div class="pagenavi"><{if $productlist_prev_page != ""}><a href="<{$productlist_prev_page}>">前のページ</a><{else}>前のページ<{/if}> | <{if $productlist_next_page != ""}><a href="<{$productlist_next_page}>">次のページ</a><{else}>次のページ<{/if}></div>
+	
+	
+<{else}>
+	<div class="indent"><!-- 該当商品がないとき -->該当する商品がありません</div>
+<{/if}></div>

@@ -1,0 +1,21 @@
+#option {
+	padding: 20px;
+}
+table {
+	border-collapse: collapse;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.td_yellow_center {
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #CCCCCC;
+	background-color: #F5F5F5;
+	font-weight: bold;
+}
+.td_white_center {
+	background-color: #FFFFFF;
+	padding: 10px;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+}

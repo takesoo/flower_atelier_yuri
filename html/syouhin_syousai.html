@@ -1,0 +1,487 @@
+ <div id="main"><{ if $product.id != "" }>
+<form name="product_form" method="post" action="<{$cart_url}>">
+    <!-- パンくずナビ -->
+<ul id="pankuzu">
+        <li><a href="./">HOME</a></li>
+        <li><{if $bid_name != ""}> &gt;&gt; <a href='<{$bid_link}>'><{$bid_name}></a><{/if}></li>
+        <li><{if $sid_name != ""}> &gt;&gt; <a href='<{$sid_link}>'><{$sid_name}></a><{/if}></li>
+        <li><{if $product_name != ""}> &gt;&gt; <a href='<{$product_link}>'><{$product_name}></a><{/if}></li>
+      </ul>
+<!--// パンくずナビ -->
+  
+
+
+      <div class="indent">
+       <!-- 商品の説明文 -->
+	    <{if $product.explain != "" }>
+        <div class="explain"><{$product.explain}></div>
+        <{/if}>
+        <!--// 商品の説明文 -->
+      <div class="line_box"></div>
+          <div class="cartBox">
+            
+			<div class="cartBox-img">
+			
+					<!-- 商品メイン画像 -->
+<{if $product.img_url != ""}><img src="<{$product.img_url}>" class="mainimg" alt="<{$product_name}>" /><{else}><img src="http://img.shop-pro.jp/tmpl_img/17/noimg200.gif" class="mainimg" /><{/if}>
+			  <!--// 商品メイン画像 -->
+			  
+			  </div>
+			
+        
+            <div class="cartBox-cart">
+			
+			<p><strong><{ $product_name }></strong></p>
+			
+              <!-- 商品のスペック表 -->
+          <table class="table1">
+           
+                
+                <{if $product.price_disp == true}><tr>
+                  <td class="td_gray">定価</td>
+			    <td class="td_white"><{$product.price}></td>
+			    </tr>
+                <{/if}>
+                
+                <tr>
+                  <td width="30%" class="td_gray">販売価格</td>
+			    <td class="td_white"><span class="font_b"><{$product.sales}></span></td>
+		      </tr>
+                
+                <{if $product.stock_disp == true}><tr>
+                  <td class="td_gray">在庫数</td>
+			    <td class="td_white"><{$product.stock_str}></td>
+			    </tr>
+                <{/if}>
+   	  
+                <{if $product.soldout_flg == 0 }><tr>
+                  <td class="td_gray">購入数</td>
+			    <td class="td_white">
+			      <table class="num" border="0" cellpadding="0" cellspacing="0">
+			        <tr>
+			          <td><input type="text" name="product_num" value="<{$product.init_num}>" style="width: 50px;" /></td>
+				      <td>
+				        <div style="width: 15px; margin: 0px;">
+				          <a href="<{$num_up_url}>"><img src="<{$num_up_img_url}>"></a>
+			            <a href="<{$num_dw_url}>"><img src="<{$num_dw_img_url}>"></a>						</div>					</td>
+				      <td>&nbsp;</td>
+				    </tr>
+		          </table>			</td>
+			    </tr>
+                <{/if}>
+                
+                <{section name=num loop=$option}><tr>
+                  <td class="td_gray"><{$option[num].name}></td>
+			    <td class="td_white">
+			      <select name="<{$option[num].select_name}>">
+			        <{html_options values=$option_value[num].id  output=$option_value[num].name selected=$key }>
+		          </select>			</td>
+			    </tr>
+                <{/section}>
+              </table>
+			  
+			  
+			  
+		    <!--// 商品のスペック表 -->
+			
+			
+			
+			  <ul class="content1" style="margin-bottom:30px;">
+                <li><a href="<{$keep_shopping_url}>">買い物を続ける</a></li>
+              <li><a href="<{$prod_inq_url}>">この商品について問い合わせる</a></li>
+              <li><a href="<{$prod_teach_url}>">この商品を友達に教える</a></li>
+            </ul>
+			
+			
+			  <!-- ”カートに入れる”ボタン（売切れ時は表示しない） -->
+
+
+              <{if $product.soldout_flg == 0 }>
+              <input type="image" src="http://img13.shop-pro.jp/PA01089/996/etc/cart_btn.jpg" title="ショッピングカートに入れる" />
+              <{/if}>
+              <!--// ”カートに入れる”ボタン -->
+          </div>
+			
+			
+            
+            </div>
+            <div class="clear"></div>
+          </div>
+		   <div class="line1"></div>
+
+
+		
+		
+		
+		
+		<div id="item">
+
+	<h3><img src="http://img13.shop-pro.jp/PA01089/996/etc/item-bar07.gif" alt="RAPPING" width="757" height="21" /></h3>
+	
+	<div class="item-rapping">
+			
+		<div class="item-rapping01" title="無料　フラワーラッピング ギフトバック別売">
+			
+			<p><strong>お花のラッピングは全て無料となっております。</strong><br />
+			ギフトバックをご希望の場合は、<br />
+			カート上のラッピングオプションよりご購入ください。</p>
+		</div>
+
+
+		<div class="item-rapping02" title="有料 雑貨ラッピング ギフトバック付">
+			
+			<p><strong>雑貨のラッピングは有料となっております。</strong><br />
+			ラッピングをご希望の場合は、<br />
+			カート上のラッピングオプションよりご購入ください。</p>
+		</div>			
+			
+			
+			
+		<div class="item-rapping03" title="ご注意">
+			
+			<p>
+			ご注文者様とお届け先が異なるギフト配送の場合は<br />
+			金額のわかるものをお入れしておりません。<br />
+			領収書をご希望の場合はご注文時、備考欄にご記入ください。</p>
+			</div>	
+			
+			
+	</div>
+	
+	
+	
+	<h3><img src="http://img13.shop-pro.jp/PA01089/996/etc/item-bar08.gif" alt="FREE SERVICE" width="757" height="22" /></h3>
+	
+		
+	<div class="item-free-s">
+		
+			
+		<div class="item-free-s_box">
+				
+				<img src="http://img13.shop-pro.jp/PA01089/996/etc/item_free-s-1.jpg" width="335" height="148" />
+				
+		<p>素材にこだわった高級感のあるオリジナルメッセージカードや<br />
+					シールをはじめ、さまざまなシーンにあわせたバラエティあふれる<br />
+					メッセージカードやシールも随時追加しております。<br />
+					ご注文時にお選びください。</p>
+				
+		</div>
+			
+			
+			
+	<div class="item-free-s_box">
+				
+				<img src="http://img13.shop-pro.jp/PA01089/996/etc/item_free-s-2.jpg" alt="" width="335" height="148" />
+				
+		<p>アレンジやラッピングに使用しているリボンの多くは素材や質感に<br />
+					こだわって選んだ両面サテンの高級リボンです。ロゴ入りオリジナル<br />
+					リボンも老舗リボンメーカーに依頼したもので艶やかな光沢感と<br />
+					厚みのある生地が花やラッピングをグッと華やかに演出します。</p>
+				
+		</div>
+			
+			
+			
+	<div class="item-free-s_box">
+				
+				<img src="http://img13.shop-pro.jp/PA01089/996/etc/item_free-s-3.jpg" alt="" width="335" height="148" />
+				
+		<p>プリザーブドフラワーにローズの香りづけをいたします。<br />
+					ご注文時、備考欄に香りづけサービス希望とご記入ください。<br />
+					※フレームタイプやガラスドームのように花が何かに覆われている<br />
+					アレンジは香りづけができません。</p>
+				
+		</div>
+		
+
+
+	<div class="item-free-s_box">
+				
+				<img src="http://img13.shop-pro.jp/PA01089/996/etc/item_free-s-4.jpg" alt="" width="335" height="149" />
+				
+			<p>プリザーブドフラワーを初めてご覧になられる方にも安心して<br />
+				楽しんでいただけるよう取扱説明書をおつけいたします。せっかく<br />
+				寿命の長いプリザーブドフラワーを選んでいただいたのだから、<br />
+				美しい状態で少しでも長く楽しんでいただけたらと思います。</p>
+				
+		</div>
+		
+		
+	</div>
+		
+		
+		
+		<h3><img src="http://img13.shop-pro.jp/PA01089/996/etc/item-bar09.gif" alt="運送料について" width="757" height="22" /></h3>
+		
+			
+			
+			<table width="750" class="item-souryou">
+				<tbody>
+				
+				<tr>
+				<td>発送地</td>
+				<td>サイズ</td>
+				<td>北海道</td>
+				<td>北東北</td>
+				<td>南東北</td>
+				<td>関　東</td>
+				<td>信　越</td>
+				<td>中　部</td>
+				<td>北　陸</td>
+				<td>関　西</td>
+				<td>中　国</td>
+				<td>四　国</td>
+				<td>九　州</td>
+				<td>沖　縄</td>
+				</tr>
+				<tr>
+				<td class="kenmei">&nbsp;</td>
+				<td class="kenmei">&nbsp;</td>
+				<td class="kenmei">北海道<br></td>
+				<td class="kenmei">青森県<br>
+				秋田県<br>
+				岩手県</td>
+				<td class="kenmei">宮城県<br>
+				山形県<br>
+				福島県</td>
+				<td class="kenmei">茨城県<br>
+				栃木県<br>
+				群馬県<br>
+				埼玉県<br>
+				千葉県<br>
+				神奈川県<br>
+				東京都<br>
+				山梨県</td>
+				<td class="kenmei">新潟県<br>
+				長野県</td>
+				<td class="kenmei">静岡県<br>
+				愛知県<br>
+				三重県<br>
+				岐阜県</td>
+				<td class="kenmei">富山県<br>
+				石川県<br>
+				福井県</td>
+				<td class="kenmei">大阪府<br>
+				京都府<br>
+				滋賀県<br>
+				奈良県<br>
+				和歌山県<br>
+				兵庫県</td>
+				<td class="kenmei">岡山県<br>
+				広島県<br>
+				山口県<br>
+				鳥取県<br>
+				島根県</td>
+				<td class="kenmei">香川県<br>
+				徳島県<br>
+				愛媛県<br>
+				高知県</td>
+				<td class="kenmei">福岡県<br>
+				佐賀県<br>
+				長崎県<br>
+				熊本県<br>
+				大分県<br>
+				宮崎県<br>
+				鹿児島県<br></td>
+				<td class="kenmei">沖縄県<br></td>
+				</tr>
+				<tr>
+				<td rowspan="6" class="hassou-point">関　東</td>
+				<td class="size">60 </td>
+				<td>1160</td>
+				<td>840</td>
+				<td>740</td>
+				<td>740</td>
+				<td>740</td>
+				<td>740</td>
+				<td>740</td>
+				<td>840</td>
+				<td>950</td>
+				<td>1050</td>
+				<td>1160</td>
+				<td>1260</td>
+				</tr>
+				<tr>
+				<td class="size">80</td>
+				<td>1370</td>
+				<td>1050</td>
+				<td>950</td>
+				<td>950</td>
+				<td>950</td>
+				<td>950</td>
+				<td>950</td>
+				<td>1050</td>
+				<td>1160</td>
+				<td>1260</td>
+				<td>1370</td>
+				<td>1790</td>
+				</tr>
+				<tr>
+				<td class="size">100</td>
+				<td>1580</td>
+				<td>1260</td>
+				<td>1160</td>
+				<td>1160</td>
+				<td>1160</td>
+				<td>1160</td>
+				<td>1160</td>
+				<td>1260</td>
+				<td>1370</td>
+				<td>1470</td>
+				<td>1580</td>
+				<td>2310</td>
+				</tr>
+				<tr>
+				<td class="size">120</td>
+				<td>1790</td>
+				<td>1470</td>
+				<td>1370</td>
+				<td>1370</td>
+				<td>1370</td>
+				<td>1370</td>
+				<td>1370</td>
+				<td>1470</td>
+				<td>1580</td>
+				<td>1680</td>
+				<td>1790</td>
+				<td>2840</td>
+				</tr>
+				<tr>
+				<td class="size">140</td>
+				<td>2000</td>
+				<td>1680</td>
+				<td>1580</td>
+				<td>1580</td>
+				<td>1580</td>
+				<td>1580</td>
+				<td>1580</td>
+				<td>1680</td>
+				<td>1790</td>
+				<td>1890</td>
+				<td>2000</td>
+				<td>3360</td>
+				</tr>
+				<tr>
+				<td class="size">160</td>
+				<td>2210</td>
+				<td>1890</td>
+				<td>1790</td>
+				<td>1790</td>
+				<td>1790</td>
+				<td>1790</td>
+				<td>1790</td>
+				<td>1890</td>
+				<td>2000</td>
+				<td>2100</td>
+				<td>2210</td>
+				<td>3890</td>
+				</tr>
+				</tbody></table>
+
+
+			
+			
+		
+		<h3><img src="http://img13.shop-pro.jp/PA01089/996/etc/item-bar10.gif" alt="プリザーブドフラワーについて" width="757" height="22" /></h3>
+		
+		
+	<div class="item-about">
+				
+				<div class="item-about_txt">
+					
+					<p><img src="http://img13.shop-pro.jp/PA01089/996/etc/item_about-txt1.gif" alt="生花を特殊加工した枯れない花はとっても長持ち" width="286" height="74" /><br />
+					食用の着色料や消毒に使用するアルコールなど、ほぼ人体に害のないものを使用して加工されています。<br />
+					ラベンダーや杉など植物本来の香りが残っている素材もありますが、
+					ほとんどの素材には香りがなく花粉も全くありません。<br />
+					美しい状態を保てる期間は1年から3年くらいが目安で、
+					湿気の少ないヨーロッパでは10年以上持ったという例もあるようです。<br />
+					<span>※食用ではありません。</span></p>
+					
+					
+					<p><img src="http://img13.shop-pro.jp/PA01089/996/etc/item_about-txt2.gif" alt="品質とこだわり" width="149" height="44" /><br />
+					プリザーブドフラワーの品質を守るために作り置きは致しておりません。<br />
+					また、お花を最も美しい表情に開花させる為の必要な技術のように
+					時間のかかる技功的手作業であっても、喜んでいただけるよう努力し続けます。
+					</p>
+					
+					
+				
+		</div>
+				
+				
+				<div class="item-about_p">
+					
+					<img src="http://img13.shop-pro.jp/PA01089/996/etc/item_about-before.jpg" alt="-開花前-" width="231" height="192" />
+					<img src="http://img13.shop-pro.jp/PA01089/996/etc/item_about-after.jpg" alt="-開花後-" width="231" height="182" />				
+				
+				</div>
+				
+				
+				
+			
+	</div>
+	
+
+</div>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+      <!-- 「こんな商品も買っています」コーナー -->
+	<{if $together_product_num != 0}>
+    <h3>関連商品</h3>
+      
+      <{section name=num loop=$together_product}>
+      <div class="item_box2"><a href="<{$together_product[num].link_url}>"><div class="item_pic">
+          <{if $together_product[num].img_url != "" }><img src="<{$together_product[num].img_url}>" class="border" /><{else}><img src="http://img.shop-pro.jp/tmpl_img/17/noimg.gif" class="border" /><{/if}></div></a>
+        <div class="item_text2"><strong><a href="<{$together_product[num].link_url}>"><{$together_product[num].name}></a></strong></div>
+        </div>
+      <{/section}>
+      <div class="clear"></div>
+      <{/if}>
+    <!-- //「こんな商品も買っています」コーナー -->
+	
+	
+	<!-- 商品のトラックバック -->
+
+<{if $trackback_url != ""}>
+
+<{$auto_trackback_url}>
+<!--
+      <h3>この商品のトラックバックURL</h3>
+        <div class="indent">
+			<div class="gray_box"><{$trackback_url}></div>
+	  </div>
+-->
+
+        <{if $trackback_num != 0}>
+<!--
+        <h3>トラックバック</h3>
+        <div class="indent">
+			<{section name=num loop=$trackback}><div class="gray_box">
+			  <p><span><{$trackback[num].make_date}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<{$trackback[num].blog_name}></span></p>
+			  <p class="tb_title"><a href="<{$trackback[num].url}>" target="_blank" rel="nofollow"><{$trackback[num].title}></a></p>
+			  <{$trackback[num].excerpt}>					
+			  </div>
+			  <{/section}>
+			  </div>
+-->
+
+        <{/if}>
+
+	
+	<{/if}>
+	<!--// 商品のトラックバック -->
+	
+	<{$product.info}>
+</form>
+
+<{else}>
+	<!-- 該当商品がないとき --><div class="indent">該当する商品がありません</div>
+<{/if}></div>

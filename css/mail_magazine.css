@@ -1,0 +1,210 @@
+/* ************************************************ 
+ *	お問合せ画面用CSS
+ * ************************************************ */
+
+/* ------------------------------------- 
+ *	ページ背景色（全体）
+ *	フォント色（全体）
+ *	フォントサイズ（全体）
+ * ------------------------------------- */
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	color:<{$font_color}>;
+	font-size: <{$font_size}>;
+	background-color: #FFFFFF;
+	font-family: "Verdana", "ヒラギノ角ゴ Pro W3", "ＭＳ ゴシック", "Osaka‐等幅";
+	line-height: 140%;
+	text-align:center;
+}
+td {
+	padding: 5px;
+	}
+
+img {
+	border:none;
+	}
+
+
+/* ------------------------------------- 
+ *	リンクの文字/通常時(link,visited,active)
+ *	リンクの文字/マウスが当たっている時(hover)
+ * ------------------------------------- */
+
+a:link    {color: <{$link_normal}>; text-decoration: underline;}
+a:visited {color: <{$link_normal}>; text-decoration: underline;}
+a:active  {color: <{$link_normal}>; text-decoration: underline;}
+a:hover   {color: <{$link_hover}>; text-decoration: none;}
+
+
+/* design css------------------------------------------ */
+
+.base01 {
+	background:#FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+
+.base02 {
+	border-top:1px solid #CCCCCC;/*テーブル－枠の色と同じ*/
+	padding-top: 12px;
+}
+
+/* ------------------------------------- 
+ *	タイトルエリアの背景色
+ * ------------------------------------- */
+.title_area {
+	font-size:<{$title_fontsize}>;
+	font-weight:bolder;
+}
+
+.title_area a:link    {color: <{$title_fontcolor}>; text-decoration: none;}
+.title_area a:visited {color: <{$title_fontcolor}>; text-decoration: none;}
+.title_area a:active  {color: <{$title_fontcolor}>; text-decoration: none;}
+.title_area a:hover   {color: #666666; text-decoration: none;}
+
+/* ------------------------------------- 
+ *	テーブルの背景色と文字色
+ * ------------------------------------- */
+
+
+table {
+	BORDER-COLLAPSE: collapse;
+}
+.CELL_1_C {
+	font-weight:bolder;
+	text-align:center;
+	background-color:<{$table_title_bgcolor}>;
+	border: 1px solid #CCCCCC;
+}
+
+.CELL_1_L {
+	font-weight:normal;
+	text-align:left;
+	background-color: #EEEEEE;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	color: #424645;
+	border: 1px solid #CCCCCC;
+}
+
+.CELL_1_R {
+	font-weight:bolder;
+	text-align:right;
+	background-color:<{$table_title_bgcolor}>;
+	border: 1px solid #CCCCCC;
+}
+
+.CELL_2 {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+
+table.secure_table,table.table1 {margin:0 auto;}
+
+
+/* ------------------------------------- 
+ *	注意書き１の文字色
+ * ------------------------------------- */
+.note {
+	color: #3399CC;
+	}
+
+/* ------------------------------------- 
+ *	注意書き２の文字色
+ * ------------------------------------- */
+.note2 {
+	font-size: 11px;
+	color: #999999;
+	}
+
+/* ------------------------------------- 
+ *	注意書き３の文字色
+ * ------------------------------------- */
+#note3 {
+	font-size: x-small;
+	font-weight:bolder;
+	color: #CC6633;
+	}
+
+
+/* ------------------------------------- 
+ *	メッセージ表示域の設定
+ * ------------------------------------- */
+
+.info {
+	background-color: #EEE;
+	border:1px <{$table_border_color}> solid;/*テーブル－枠の色と同じ*/
+	color:#996633;
+	padding:10px;
+	margin: 10px auto;
+	text-align: left
+}
+
+/* ------------------------------------- 
+ *	エラー表示域の設定
+ * ------------------------------------- */
+ 
+.errorbox {
+	background-color: #FFFF99;
+	padding: 5px;
+	margin:10px auto;
+	font-size:11px;
+	font-weight:bolder;
+}
+
+/* ------------------------------------- 
+ *	標準枠の設定
+ * ------------------------------------- */
+.sub {
+	border: 1px solid <{$table_border_color}>;/*テーブル－枠の色と同じ*/
+}
+
+/* ------------------------------------- 
+ *	商品合計金額の文字色
+ * ------------------------------------- */
+.prod_total {
+	color: #CC3333;
+	font-weight: bold;
+}
+
+/* ------------------------------------- 
+ *	手数料の文字色
+ * ------------------------------------- */
+.sub_charge {
+	color: #900990;
+	font-weight: bold;
+}
+
+/* ------------------------------------- 
+ *	総合計の文字色
+ * ------------------------------------- */
+.all_total {
+	color: blue;
+	font-weight: bold;
+}
+
+/* ------------------------------------- 
+ *	使用ポイントの文字色
+ * ------------------------------------- */
+.point_discon {
+	color: red;
+	font-weight: bold;
+}
+.secure_seal {
+	background-color: #FFFFFF;
+	width: 804px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.copyright {
+	background-color: #FFFFFF;
+	width: 804px;
+	margin-right: auto;
+	margin-left: auto;
+}

@@ -1,0 +1,1047 @@
+/* ************************************************
+ * ------------------------------------------------
+ *      決済画面 CSS
+ * ------------------------------------------------
+ * ************************************************ */
+
+/* -------------------------------------
+ *      ページ背景色（全体）
+ *      ページ背景画像（全体）
+ *      フォント・フォーム・共通部分
+ * ------------------------------------- */
+
+*{
+        margin:0px;
+        padding:0px;
+}
+
+body {
+        background-color:<{$page_bgcolor}>;
+        color:<{$page_fontcolor>;
+        font: <{$page_fontsize}>/150% "Verdana", "Arial", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ ゴシック", "Osaka‐等幅";
+        margin:0px;
+        padding:30px;
+}
+
+ul{
+        list-style-type:none;
+}
+
+form{
+        margin:0px;
+        padding:0px;
+}
+
+img{
+        border:none;
+}
+
+input{
+        padding:1px;
+        margin:2px;
+}
+
+select{
+        padding:2px;
+        margin:2px 0px;
+}
+
+textarea{
+        padding:2px;
+        margin:2px 0px;
+        font-size:12px;
+}
+
+span.b{
+        font-weight:bold;
+}
+
+span.small{
+        font-size:10px;
+        line-height:130%;
+}
+
+br.clear{
+        clear:both;
+}
+
+.clearfix:after{
+        content:".";
+        display:block;
+        height:0;
+        clear:both;
+        visibility:hidden;
+}
+
+/* -------------------------------------
+ *      リンクの文字/通常時(link,visited,active)
+ *      リンクの文字/マウスが当たっている時(hover)
+ * ------------------------------------- */
+a:link{color:<{$link_fontcolor}>; text-decoration:yes;}
+a:visited{color:<{$link_fontcolor}>; text-decoration:yes;}
+a:active{color:<{$link_fontcolor}>; text-decoration:yes;}
+a:hover{color:<{$link_fontcolor_onmouse}>; text-decoration:none;}
+
+/* -------------------------------------
+ *      メイン部分中央寄せ
+ * ------------------------------------- */
+#wrapper{
+        width:800px;
+        margin:20px auto;
+        text-align:left;
+}
+
+/* -------------------------------------
+ *      ヘッダー
+ * ------------------------------------- */
+#header{
+        width:800px;
+        margin:0px auto;
+}
+
+/* 買い物ステップ */
+#shopping_step{
+}
+
+/* ショップタイトル */
+.shop_title a{
+        font-size:<{$title_fontsize}>;
+        line-height:140%;
+        color:<{$title_fontcolor}>;
+        font-weight:bold;
+        margin-bottom:20px;
+        background-color:<{$title_bgcolor}>;
+}
+
+/* -------------------------------------
+ *      エラーBOX
+ * ------------------------------------- */
+.errorbox{
+        background:#FFF url(../img2/ic_alart.png) no-repeat 10px 7px;
+        border:2px solid #FF0000;
+        padding:8px 5px 8px 40px;
+        color:#FF0000;
+        font-weight:bold;
+        text-align:left;
+        margin:30px auto 20px;
+        clear:both;
+}
+
+/* -------------------------------------
+ *      エラーメッセージ
+ * ------------------------------------- */
+.errormsg{
+        color:#FF0000;
+        font-size:12px
+}
+
+/* -------------------------------------
+ *      カートの中
+ * ------------------------------------- */
+#cart{
+        width:100%;
+        clear:both;
+        background-color:#CCCCCC;
+        border:2px solid #333;
+}
+
+#cart .cell_2_l:last-child{
+        border-right:none;
+}
+
+#cart .cell_1_c:last-child{
+        border-right:none;
+}
+
+/* 商品画像 */
+td.photo{
+        padding:3px;
+        background-color:#FFFFFF;
+        border-bottom:1px solid #CCCCCC;
+        width:70px;
+}
+
+/* 商品名 */
+td.name{
+        background-color:#FFFFFF;
+        padding:5px 10px;
+        border-right:1px dotted #CCCCCC;
+        border-bottom:1px solid #CCCCCC;
+        text-align:left;
+}
+
+/* 販売価格 */
+td.price{
+        background-color:#FFFFFF;
+        padding:5px 10px;
+        border-right:1px dotted #CCCCCC;
+        border-bottom:1px solid #CCCCCC;
+        text-align:right;
+}
+
+/* 個別送料 */
+td.price .indidelivery{
+        font-size:12px;
+        color:#FF6600;
+}
+
+/* 数量 */
+td.unit{
+        background-color:#FFFFFF;
+        padding:5px 10px;
+        border-right:1px dotted #CCCCCC;
+        border-bottom:1px solid #CCCCCC;
+        text-align:right;
+}
+
+/* 変更 */
+td.delete{
+        background-color:#FFFFFF;
+        padding:5px 10px;
+        border-right:1px dotted #CCCCCC;
+        border-bottom:1px solid #CCCCCC;
+        text-align:center;
+}
+
+/* 小計 */
+td.subtotal{
+        background-color:#FFFFFF;
+        padding:5px 10px;
+        border-bottom:1px solid #CCCCCC;
+        text-align:right;
+}
+
+/* 商品合計 */
+td.totalprice{
+        background-color:#FFFFFF;
+        padding:5px 10px;
+        border-bottom:1px solid #CCCCCC;
+        text-align:right;
+}
+
+/* -------------------------------------
+ *      入力フォーム
+ * ------------------------------------- */
+.table_form {
+        width:100%;
+        margin:24px auto 0px;
+        border-top:1px solid <{$table_color}>;
+        border-right:1px solid <{$table_color}>;
+        border-left:1px solid <{$table_color}>;
+}
+
+/*見出し*/
+h2{
+        background-color:#5F5F5F;
+        padding:7px 10px;
+        color:#FFFFFF;
+        font-size:14px;
+        text-align:left;
+}
+
+/*必須項目*/
+.must{
+        margin-left:5px;
+        color:#FF3366;
+}
+
+/*入力フォーム解説*/
+.note{
+        margin:3px;
+        color:#666666;
+}
+
+/*ショップ会員登録*/
+ul.shopmem_regist li{
+        margin-right:10px;
+        display:inline;
+        width:200px;
+}
+
+/*送付先の設定*/
+ul.deli_choice li{
+        margin-bottom:10px;
+}
+
+ul.deli_choice li:last-child{
+        margin-bottom:0px;
+}
+
+/* 配送料無料設定 */
+#freeshopping ul{
+        background-color:#FFE8E8;
+        padding:10px;
+        margin-top:10px;
+        color:#FF0066;
+        font-weight:bold;
+        text-align:right;
+}
+
+/* -------------------------------------
+ *      フォームcell共通
+ * ------------------------------------- */
+.cell_1_c{
+        background-color:<{$table_title_bgcolor}>;
+        padding:7px 10px;
+        font-weight:bold;
+        border-bottom:1px solid <{$table_color}>;
+        border-right:1px dotted <{$table_color}>;
+        text-align:center;
+        color:<{$table_title_fontcolor}>;
+}
+
+.cell_1_l{
+        background-color:<{$table_title_bgcolor}>;
+        padding:7px 10px;
+        border-bottom:1px solid <{$table_color}>;
+        border-right:1px dotted <{$table_color}>;
+        text-align:left;
+        font-weight:normal;
+        color:<{$table_title_fontcolor}>;
+}
+
+.cell_1_r{
+        background-color:<{$table_title_bgcolor}>;
+        padding:7px 10px;
+        border-bottom:1px solid <{$table_color}>;
+        border-right:1px dotted <{$table_color}>;
+        text-align:right;
+        color:<{$table_title_fontcolor}>;
+}
+
+.cell_2_c{
+        background-color:<{$table_colum_bgcolor}>;
+        padding:7px 10px;
+        border-bottom:1px solid <{$table_color}>;
+        text-align:center;
+}
+
+.cell_2_l{
+        background-color:<{$table_colum_bgcolor}>;
+        padding:7px 10px;
+        border-bottom:1px solid <{$table_color}>;
+        text-align:left;
+}
+
+.cell_2_r{
+        background-color:<{$table_colum_bgcolor}>;
+        padding:7px 10px;
+        border-bottom:1px solid <{$table_color}>;
+        text-align:right;
+}
+
+.cell_3{
+        background-color:<{$table_colum_bgcolor}>;
+        padding:20px 10px 8px 10px;
+        font-size:16px;
+        font-weight:bold;
+        border-bottom:2px solid #333;
+}
+
+/* 配送方法・決済方法選択 */
+.select_rb{
+        background-color:#FEF4CD;
+        border:1px solid #CCCCCC;
+        padding:5px;
+        font-size:14px;
+        color:#000000;
+        font-weight:bold;
+        margin-bottom:5px;
+}
+
+.select_rb .button{
+        padding:5px;
+        vertical-align:middle;
+}
+
+.select_ex{
+        margin:10px 10px 15px 10px;
+}
+
+
+/* -------------------------------------
+ *      総合計の文字色
+ * ------------------------------------- */
+.prod_total{
+        color:#000;
+        font-weight:bold;
+}
+
+.all_total{
+        color:#000;
+        font-size:14px;
+        font-weight:bold;
+}
+
+/* -------------------------------------
+ *      カートを空にする・変更
+ * ------------------------------------- */
+.link_empty{
+        float:right;
+        margin:0px 0px 10px 0px;
+}
+
+.link_change{
+        float:right;
+        margin:0px 10px 10px 0px;
+}
+
+/* -------------------------------------
+ *      ボタン
+ * ------------------------------------- */
+#btn{
+        width:500px;
+        height:75px;
+        margin:10px auto;
+}
+
+a.btn_backtoshop,
+a.btn_regi,
+a.btn_next,
+a.btn_back,
+a.btn_change,
+a.btn_addaddress,
+a.btn_addaddress_post,
+a.btn_addaddress_update,
+a.btn_pickup_end,
+a.btn_s_back,
+a.btn_itempickup,
+a.btn_itempickup_post,
+a.btn_end,
+a.btn_creditpay,
+a.btn_backtop{
+        background-image:url(../img2/btn.png);
+        background-repeat:no-repeat;
+        text-indent:-9999px;
+        border-style: none;
+        margin:0 auto;
+        float:left;
+        display: inline;
+        overflow: hidden;
+}
+
+a.btn_backtoshop{
+        background-position:0px 0px;
+        width:230px;
+        height:42px;
+        float:left;
+        margin:15px 10px 30px;
+}
+
+a:hover.btn_backtoshop{
+        background-position:0px -42px;
+}
+
+a.btn_regi{
+        background-position:-230px 0px;
+        width:230px;
+        height:42px;
+        float:left;
+        margin:15px 10px 30px;
+}
+
+a:hover.btn_regi{
+        background-position:-230px -42px;
+        float:left;
+        margin:15px 10px 30px;
+}
+
+a.btn_back{
+        background-position:-460px 0px;
+        width:230px;
+        height:42px;
+        float:left;
+        margin:15px 10px 30px;
+}
+
+a:hover.btn_back{
+        background-position:-460px -42px;
+}
+
+a.btn_change{
+        background-position:-1611px 0px;
+        width:230px;
+        height:42px;
+        float:left;
+        margin:15px 10px 30px;
+}
+
+a:hover.btn_change{
+        background-position:-1611px -42px;
+}
+
+a.btn_next{
+        background-position:-690px 0px;
+        width:230px;
+        height:42px;
+        float:left;
+        margin:15px 10px 30px;
+}
+
+a:hover.btn_next{
+        background-position:-690px -42px;
+}
+
+a.btn_itempickup{
+        background-position:-1150px -0px;
+        width:230px;
+        height:42px;
+        float:left;
+        margin:15px 10px 30px;
+}
+
+a:hover.btn_itempickup{
+        background-position:-1150px -42px;
+}
+
+a.btn_itempickup_post{
+        background-position:-1380px -0px;
+        width:230px;
+        height:42px;
+        float:left;
+        margin:15px 10px 30px;
+}
+
+a:hover.btn_itempickup_post{
+        background-position:-1380px -42px;
+}
+
+a.btn_addaddress{
+        background-position:0px -94px;
+        width:190px;
+        height:36px;
+        margin:10px;
+        float:right;
+}
+
+a:hover.btn_addaddress{
+        background-position:0px -130px;
+}
+
+a.btn_addaddress_post{
+        background-position:-190px -94px;
+        width:190px;
+        height:36px;
+        margin:10px;
+        float:right;
+}
+
+a:hover.btn_addaddress_post{
+        background-position:-190px -130px;
+}
+
+a.btn_addaddress_update{
+        background-position:-760px -94px;
+        width:190px;
+        height:37px;
+        margin:10px;
+        float:right;
+}
+
+a:hover.btn_addaddress_update{
+        background-position:-760px -130px;
+}
+
+a.btn_pickup_end{
+        background-position:-570px -94px;
+        width:190px;
+        height:36px;
+        margin:10px;
+        float:right;
+}
+
+a:hover.btn_pickup_end{
+        background-position:-570px -130px;
+}
+
+a.btn_s_back{
+        background-position:-380px -94px;
+        width:190px;
+        height:36px;
+        margin:10px;
+}
+
+a:hover.btn_s_back{
+        background-position:-380px -130px;
+}
+
+.btn_bg{
+        background:#FEFBCD;
+        border:3px solid #FFCC00;
+        margin:0 auto;
+        text-align:center;
+        width:794px;
+}
+
+a.btn_end{
+        background-position:-920px 0px;
+        width:230px;
+        height:42px;
+        margin:15px 10px;
+}
+
+a:hover.btn_end{
+        background-position:-920px -42px;
+}
+
+a.btn_creditpay{
+        background-position:-1840px 0px;
+        width:300px;
+        height:52px;
+        margin:30px 100px;
+}
+
+a:hover.btn_creditpay{
+        background-position:-1840px -52px;
+}
+
+a.btn_backtop{
+        background-position:-2140px 0px;
+        width:300px;
+        height:52px;
+        margin:30px 100px;
+}
+
+a:hover.btn_backtop{
+        background-position:-2140px -52px;
+}
+
+#quick{
+        width:500px;
+        background:#FFECDF;
+        text-align:left;
+        border:2px solid #FDA753;
+        padding:15px;
+        margin:0px auto 20px;
+}
+
+/*フォームボタン*/
+input.image_btn{
+        cursor:pointer;
+        display:inline-block;
+        background-color:#DFDFDF;
+        background-repeat:no-repeat;
+        background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#FFF), color-stop(25%, #FFF), to(#DFDFDF));
+        background-image:-webkit-linear-gradient(#FFF, #FFF 25%, #DFDFDF);
+        background-image:-moz-linear-gradient(top, #FFF, #FFF 25%, #DFDFDF);
+        background-image:-ms-linear-gradient(#FFF, #FFF 25%, #DFDFDF);
+        background-image:-o-linear-gradient(#FFF, #FFF 25%, #DFDFDF);
+        background-image:linear-gradient(#FFF, #FFF 25%, #DFDFDF);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFEEE', endColorstr='#DFDFDF', GradientType=0);
+        padding:3px 6px;
+        color:#000;
+        border:2px solid #EC5F00;
+        -webkit-border-radius:4px;
+        -moz-border-radius:4px;
+        border-radius:4px;
+        -webkit-transition:0.1s linear all;
+        -moz-transition:0.1s linear all;
+        -ms-transition:0.1s linear all;
+        -o-transition:0.1s linear all;
+        transition:0.1s linear all;
+}
+
+input:hover.image_btn{
+        background:-moz-linear-gradient(center bottom, #FFF 1%,#FFF 100%);
+        background:-webkit-gradient(linear, left bottom, left top, color-stop(0.01, #FFF),color-stop(1, #FFF));
+}
+
+/* -------------------------------------
+ *      クイック購入ボタン
+ * ------------------------------------- */
+#quick input.btn_quick{
+        float:right;
+}
+
+#quick p{
+        width:320px;
+}
+
+/* -------------------------------------
+ *      オススメ商品
+ * ------------------------------------- */
+ul.pickup{
+}
+
+ul.pickup li{
+        float:left;
+        width:33.333333%;
+}
+
+ul.pickup li div.listbox{
+        margin:0px auto;
+}
+
+ul.pickup li img{
+        margin-bottom:10px;
+        max-width: 155px;
+}
+
+/* -------------------------------------
+ *      特定商取引法のリンク
+ * ------------------------------------- */
+.tokutei{
+        text-align:right;
+        margin-top:20px;
+}
+
+.tokutei_link{
+        background-color:#F5F5F5;
+        border:1px solid #CCC;
+        padding:10px;
+}
+
+/* -------------------------------------
+ *      メッセージ表示域の設定
+ * ------------------------------------- */
+.info{
+        border:1px #49BAD2 solid;
+        padding:5px 10px;
+        margin:15px auto;
+        color:#006B80;
+        text-align:left
+}
+
+/* -------------------------------------
+ *      クイック購入ページ
+ * ------------------------------------- */
+#quick_order{
+        margin-top:30px;
+}
+
+#quick_order .calamel_area{
+        float:right;
+        margin-top:20px;
+        width:380px;
+}
+
+#quick_order .calamel_area .cap{
+        font-size:14px;
+        line-height:150%;
+        font-weight:bold;
+}
+
+#quick_order .calamel_area .cap .gmopoint{
+        color:#FF6600;
+}
+
+#quick_order .calamel_area .txt{
+        margin-top:20px;
+}
+
+#quick_order .calamel_area .link{
+        margin-top:20px;
+}
+
+#quick_order .calamel_area .link p{
+        margin-bottom:5px;
+}
+
+/* -------------------------------------
+ *      とくＰ・ショップログインエリア
+ * ------------------------------------- */
+#gmopointlogin{
+        float:left;
+}
+
+#shoplogin{
+        float:right;
+}
+
+dl.member_login{
+        width:380px;
+        border: 4px solid #CCCCCC;
+        margin:20px auto 0px;
+}
+
+dl.member_login dt{
+        background:#EEE;
+        padding:10px;
+        font-weight:bold;
+        font-size:14px;
+        text-align:center;
+}
+
+dl.member_login dd{
+        padding:15px;
+}
+
+dl.member_login dd .get_point{
+        background:#FEFBCD;
+        border:3px solid #FFCC00;
+        padding:10px;
+        margin:20px 0px;
+        text-align:center;
+}
+
+dl.member_login dd .get_point span.point{
+        color:#FF0000;
+}
+
+dl.member_login dd .get_point span.small{
+        font-size:10px;
+}
+
+dl.member_login table.login_form{
+        text-align:left;
+        margin:0 auto;
+}
+
+dl.member_login table.login_form th{
+        padding:3px;
+        text-align:left;
+        width:110px;
+}
+
+dl.member_login table.login_form td{
+        padding:3px;
+}
+
+dl.member_login table.login_form input.button{
+        cursor:pointer;
+        display:inline-block;
+        background-color:#FFCC00;
+        background-repeat:no-repeat;
+        background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#FEFACA), color-stop(25%, #FEFACA), to(#FFCC00));
+        background-image:-webkit-linear-gradient(#FEFACA, #FEFACA 25%, #FFCC00);
+        background-image:-moz-linear-gradient(top, #FEFACA, #FEFACA 25%, #FFCC00);
+        background-image:-ms-linear-gradient(#FEFACA, #FEFACA 25%, #FFCC00);
+        background-image:-o-linear-gradient(#FEFACA, #FEFACA 25%, #FFCC00);
+        background-image:linear-gradient(#FEFACA, #FEFACA 25%, #FFCC00);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFACA', endColorstr='#FFCC00', GradientType=0);
+        padding:5px 10px;
+        color:#000;
+        font-weight:bold;
+        border:1px solid #FFCC00;
+        -webkit-border-radius:4px;
+        -moz-border-radius:4px;
+        border-radius:4px;
+        -webkit-transition:0.1s linear all;
+        -moz-transition:0.1s linear all;
+        -ms-transition:0.1s linear all;
+        -o-transition:0.1s linear all;
+        transition:0.1s linear all;
+}
+
+dl.member_login table.login_form input:hover.button{
+        background:-moz-linear-gradient(center bottom, #FEFACA 1%,#FEFACA 100%);
+        background:-webkit-gradient(linear, left bottom, left top, color-stop(0.01, #FEFACA),color-stop(1, #FEFACA));
+}
+
+dl.member_login table.login_form .regist{
+        text-align:center;
+        font-weight:bold;
+        font-size:16px;
+}
+
+dl.member_login table.login_form .passward{
+        text-align:center;
+}
+
+dl.member_login table.login_form .otheraccount{
+        float:left;
+}
+
+dl.member_login .calameltit{
+        margin:20px 0px 5px 0px;
+}
+
+dl.member_login p{
+        margin-bottom:10px;
+}
+
+/* -------------------------------------
+ *      今回利用するポイント
+ * ------------------------------------- */
+.point_input{
+        width:60px;
+        text-align:right;
+        background-color:#FDFCCC;
+}
+
+.point_input_error{
+        width:60px;
+        text-align:right;
+        background-color:#FECBCB;
+}
+
+.yahoo_logout{
+margin-top:5px;
+}
+
+/* -------------------------------------
+ *      今回のお買物の付与ポイント
+ * ------------------------------------- */
+.point_get{
+        width:300px;
+        float:right;
+        margin:3px 0px 20px 0px;
+        background-color:#FFE1E1;
+        text-align:right;
+        padding-bottom:10px;
+}
+
+.point_get .arrow{
+        background:url(../img2/point_arrow.gif) no-repeat top right;
+        width:100%;
+        height:10px;
+}
+
+.point_get dl dt{
+        margin:5px 5px 5px 5px;
+}
+
+.point_get dl dd{
+        padding:0px 5px 0px 15px;
+}
+
+.point_get .point{
+        color:#CC0000;
+        font-weight:bold;
+}
+
+#copyright{
+        border-top:1px solid #CCCCCC;
+        padding-top:10px;
+        margin-top:30px;
+        text-align:center;
+        clear:both;
+}
+
+/* -------------------------------------
+ *      送付先追加BOX
+ * ------------------------------------- */
+.addaddressbox{
+        margin:0 auto;
+}
+
+/* -------------------------------------
+ *      「個別配送」注意文
+ * ------------------------------------- */
+.individual_msg{
+        width:800px;
+        margin:10px auto;
+}
+
+/* -------------------------------------
+ *      かんたん決済を利用する
+ * ------------------------------------- */
+.table_kantan{
+        background:#CCCCCC;
+        padding:3px;
+        margin-bottom:10px;
+}
+
+.table_kantan .kantan_select{
+        background:#EEEEEE;
+        padding:5px 10px;
+        margin-bottom:5px;
+        color:#000;
+        font-weight:bold;
+}
+
+/* -------------------------------------
+ *      注意事項
+ * ------------------------------------- */
+.attention{
+        width:800px;
+        margin:10px auto;
+}
+
+.back_shop_link{
+        text-align:right;
+        margin:10px 0px;
+}
+
+/* -------------------------------------
+ *      支払合計金額
+ * ------------------------------------- */
+.payment_price{
+        border-bottom:1px solid #000000;
+        text-align:right;
+        float:right;
+        margin:30px 0px 60px;
+        padding-bottom:5px;
+        color:#000000;
+}
+
+.payment_price .number{
+        font-weight:bold;
+        font-size:18px;
+        margin-left:50px;
+}
+
+/* -------------------------------------
+ *      今回の買物で付与されるポイント（カート）
+ * ------------------------------------- */
+.save_point{
+        background:#FEFBCD;
+        border:2px solid #FFCC00;
+        padding:10px;
+        margin:10px auto;
+        text-align:center;
+}
+
+.save_point ul li{
+        margin:3px;
+}
+
+.save_point ul li img{
+        vertical-align:middle;
+}
+
+.save_point ul li .point{
+        font-size:14px;
+        font-weight:bold;
+        color:#FF0000;
+}
+
+/* -------------------------------------
+ *      特定商取引法
+ * ------------------------------------- */
+.sk_title{
+        font-weight:bold;
+        font-size:14px;
+}
+
+.sk_closed{
+        text-align:center;
+        margin:15px;
+}
+
+/* -------------------------------------
+ *      注文完了
+ * ------------------------------------- */
+#order_end{
+        text-align:center;
+}
+
+#order_end .order_number{
+        width:300px;
+        margin:0 auto;
+        background:#FEFBCD;
+        padding:20px;
+        font-size:16px;
+        font-weight:bold;
+        margin-bottom:20px;
+}
+
+#order_end .order_cap{
+        font-size:14px;
+        line-height:180%;
+        margin-bottom:15px;
+}
+
+
+/* -------------------------------------
+ *      ベリサインSSLサーバ証明書
+ * ------------------------------------- */
+#secure_seal{
+        width:500px;
+        margin:20px auto;
+}
+
+#secure_seal .cap{
+        padding-left:20px;
+        font-size:11px;
+}

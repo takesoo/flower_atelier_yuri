@@ -1,0 +1,11 @@
+.order_hed{
+	width:765px;
+	text-align:right;
+	margin-bottom:20px;
+	font-family:"ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+	color:#666666;
+}
+
+	.order_hed p{
+		margin:10px 0px 0px;
+	}

@@ -1,0 +1,174 @@
+<div id="main"><ul id="pankuzu">
+        <li><a href="./">HOME</a></li>
+        <li> &gt;&gt; 特定商取引法に基づく表記</li>
+      </ul>
+	  <a name="shop"></a>
+<h2>特定商取引法に基づく表記</h2>
+<div class="indent"><div class="content_box">
+      <div class="guide_link"><a href="#2">ご注文について</a></div>
+    <div class="guide_link"><a href="#6">商品の掲載について</a></div>  
+    <div class="guide_link"><a href="#3">お支払いについて</a></div>
+    <div class="guide_link"><a href="#4">配送方法・送料について</a></div>
+    <div class="clear"></div>
+</div>
+<table width="100%" border="0" cellpadding="0" cellspacing="2" class="law">
+    <{if $shop.shop_name != ""}>	
+    <tr>
+      <th>販売業者</th>
+		  <td><{ $shop.shop_name }></td>
+	  </tr>	
+    <{/if}>	
+    <{if $shop.manager_name != ""}>
+    <tr>
+      <th>運営統括責任者名</th>
+		  <td><{ $shop.manager_name }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.postal != ""}>
+    <tr>
+      <th>郵便番号</th>
+		  <td><{ $shop.postal }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.address != ""}>	
+    <tr>
+      <th>住所</th>
+		  <td><{ $shop.address }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.price != ""}>	
+    <tr>
+      <th>商品代金以外の料金の説明</th>
+		  <td><{ $shop.price }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.apply_limit != ""}>	
+    <tr>
+      <th>申込有効期限</th>
+		  <td><{ $shop.apply_limit }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.bad_product != ""}>
+    <tr>
+      <th>不良品</th>
+		  <td><{ $shop.bad_product }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.sales_num != ""}>	
+    <tr>
+      <th>販売数量</th>
+		  <td><{ $shop.sales_num }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.delivery_time != ""}>	
+    <tr>
+      <th>引渡し時期</th>
+		  <td><{ $shop.delivery_time }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.payment_way != ""}>	
+    <tr>
+      <th>お支払い方法</th>
+		  <td><{ $shop.payment_way }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.payment_limit != ""}>	
+    <tr>
+      <th>お支払い期限</th>
+		  <td><{ $shop.payment_limit }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.return_limit != ""}>	
+    <tr>
+      <th><a name="5" id="5"></a>返品期限</th>
+		  <td><{ $shop.return_limit }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.return_price != ""}>	
+    <tr>
+      <th>返品送料</th>
+		  <td><{ $shop.return_price }></td>
+	  </tr>	
+    <{/if}>		
+    <{if $shop.license != ""}><tr>
+      <th>資格・免許</th>
+		  <td><{ $shop.license }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.service_name != ""}>
+    <tr>
+      <th>屋号またはサービス名</th>
+		  <td><{ $shop.service_name }></td>
+	  </tr>
+    <{/if}>		
+    <{if $shop.tel != ""}>
+    <tr>
+      <th>電話番号</th>
+		  <td><{ $shop.tel }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.email != ""}>
+    <tr>
+      <th>公開メールアドレス</th>
+		  <td><{ $shop.email }></td>
+	  </tr>
+    <{/if}>	
+    <{if $shop.hp_address != ""}>	
+    <tr>
+      <th>ホームページアドレス</th>
+		  <td><{ $shop.hp_address }></td>
+	  </tr>
+    <{/if}>	
+  </table>
+</div>
+    <h2><a name="1" id="1"></a>ショッピングガイド</h2>
+    <h3><a name="2" id="2"></a>ご注文について</h3>
+    <div class="indent">
+      <ul class="guide">
+        <li>ご注文はショッピングカートにて<strong>24</strong>時間承っております。</li>
+   <li>営業時間　10:00～18:00 定休日（土、日、祝日)　営業時間外のご注文は翌営業日扱いとなります。</li>   
+        <li>ご購入後お客様へ自動返信メールが届きます。</li>
+        <li>その後当店よりご注文の確認メールをお送りします。<br />
+          <strong>48</strong>時間以内にメールが届かない場合、アドレス相違等が考えられますので<br />
+          お手数ですが<a href="<{$view_inq_url}>"><strong>こちら</strong></a>までご連絡ください。<br />
+        </li>
+  <li>当店では、<strong>SSL</strong>に対応したショッピングカートを利用しております。</li>
+      </ul>
+    </div>
+<h3><a name="6" id="6"></a>商品の掲載について</h3>
+    <div class="indent">
+      <ul class="guide">
+        <li>表記価格は価格変更になる場合がございますので、ご注文時の表記価格にて販売させていただきます。</li>
+        <li>価格表示に誤りがあった場合には、誠に申し訳ありませんが注文を取り消しさせていただく場合がありますので予めご了承ください。</li>
+        <li>商品掲載には万全を期しておりますが、品番、スペック等の記載ミスがある場合がございます。<br />
+上記に付随するトラブル、損害の責任は負いかねますので予めご了承ください。<br />
+メーカーホームページ等で品番、スペック等の確認をして頂きます様お願い致します。</li>
+
+<li>商品によっては、カラー等選べるものがございますが、指定のない場合は掲載商品、もしくは在庫にある色になります。</li>
+  <li>商品の価格はすべて税込み、送料込みの価格です。<br />
+別途、振込手数料がかかりますのでご注意ください。</li>
+      </ul>
+    </div>
+<a name="payment"></a>
+    <h3><a name="3" id="3"></a>お支払いについて</h3>
+    <div class="indent">
+      <table width="100%">
+<{section name=num loop=$sk_payment}>
+        <tr>
+          <td nowrap="nowrap" class="td_yellow"><{if $sk_payment[num].img_url != "" }><img src="<{$sk_payment[num].img_url}>" align="absmiddle" /><{/if}><{$sk_payment[num].name}></td>
+          <td class="td_white"><{if $sk_payment[num].card_img != "" }><{$sk_payment[num].card_img}><br /><{/if}><{$sk_payment[num].other}></td>
+        </tr>
+<{/section}>
+      </table>
+    </div>
+<a name="delivery"></a>
+<h3><a name="4" id="4"></a>配送方法・送料について</h3>
+    <div class="indent"><table width="100%">
+<{section name=num loop=$sk_delivery}>
+        <tr>
+          <td nowrap="nowrap" class="td_yellow"><{if $sk_delivery[num].img_url != "" }><img src="<{$sk_delivery[num].img_url}>" align="absmiddle" /><{/if}><{$sk_delivery[num].name}></td>
+          <td class="td_white"><{$sk_delivery[num].other}></td>
+        </tr>
+<{/section}>
+      </table>
+    </div></div>

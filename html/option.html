@@ -1,0 +1,73 @@
+<div id="option">
+      <div class="category_title">「<{$product.name}>」のオプション詳細情報</div>
+    
+<{***** オプションが1個の場合 *****}>
+      <{if $option_num == 1}>
+      <table width="400" cellpadding="0" cellspacing="0">
+        <tr>
+          <{***** オプション名を表示 *****}>
+          <{section name=num loop=$option_value[0]}>
+          <td class="td_yellow_center"><{$option_value[0][num].name}></td>
+	<{/section}>        </tr>
+        <tr>
+          <{***** 在庫数・値段などを表示 *****}>
+          <{section name=num loop=$option_item[0]}>
+          <td class="td_white_center">
+            <{if $members_login_flg == true && $option_item[0][num].discount_flg == true}>
+            <!-- 通常販売価格 -->
+            <p class="regular_price_stock"><{$option_item[0][num].regular_price}></p>
+			<{/if}>
+            <!-- 販売価格 -->
+            <p class="price_stock"><{$option_item[0][num].price}></p>
+			<{if $members_login_flg == true && $option_item[0][num].discount_flg == true}>
+            <!-- 割引率 -->
+            <p class="discount_rate_stock"><{$option_item[0][num].discount_rate}>OFF!!</p>
+			<{/if}>
+            <{if $option_item[0][num].d_flg == true}>
+            <{$option_item[0][num].d_stk}>
+            <{/if}>          </td>
+	<{/section}>        </tr>
+      </table>
+    
+<{***** オプションが2個の場合 *****}>
+      <{elseif $option_num == 2}>
+      <table width="400" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="td_yellow_center">&nbsp;</td>
+	<{***** オプション名（一つ目）を表示（横に列挙） *****}>
+          <{section name=num loop=$option_value[0]}>
+          <td class="td_yellow_center"><{$option_value[0][num].name}></td>
+	<{/section}>        </tr>
+        <{section name=num loop=$option_value[1]}>
+        <tr>
+          <{***** オプション名（一つ目）を表示（縦に列挙） *****}>
+          <td class="td_yellow_center"><{$option_value[1][num].name}></td>
+		<{***** 在庫数・値段などを表示 *****}>
+          <{section name=num2 loop=$option_item[num]}>
+          <td class="td_white_center">
+            <{if $members_login_flg == true && $option_item[num][num2].discount_flg == true}>
+            <!-- 通常販売価格 -->
+            <p class="regular_price_stock"><{$option_item[num][num2].regular_price}></p>
+			<{/if}>
+            <!-- 販売価格 -->
+            <p class="price_stock"><{$option_item[num][num2].price}></p>
+			<{if $members_login_flg == true && $option_item[num][num2].discount_flg == true}>
+            <!-- 割引率 -->
+            <p class="discount_rate_stock"><{$option_item[num][num2].discount_rate}>OFF!!</p>
+			<{/if}>
+            
+            <{if $option_item[num][num2].d_flg == true}>
+            <{$option_item[num][num2].d_stk}>
+            <{/if}>          </td>
+		<{/section}>        </tr>
+        <{/section}>
+      </table>
+	    
+<{***** オプションがない場合 *****}>
+      <{else}>
+      <div style="margin:10px 0px;">オプション情報がありません。</div>
+<{/if}>
+      
+      <div class="option_btn"><a href="javascript:window.close();">閉じる</a></div>
+    <br />
+    </div>

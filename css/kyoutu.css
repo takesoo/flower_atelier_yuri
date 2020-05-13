@@ -1,0 +1,808 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 80%;
+	line-height: 140%;
+	
+}
+.clear {
+	font-size: 0px;
+	clear: both;
+	line-height: 0px;
+	height: 1px;
+}
+img {
+ 	border:none;
+}
+a:link {
+	TEXT-DECORATION: none;
+	color: #705C43;
+	
+}
+a:visited {
+	TEXT-DECORATION: none;
+	color: #705C43;
+	
+}
+a:hover {
+	TEXT-DECORATION: none;
+	color: #8A7253;
+
+}
+a:active {
+	TEXT-DECORATION: none;
+	color: #705C43;
+
+}
+.side_link2 a:link {
+	TEXT-DECORATION: none;
+	color: #FFFFFF;
+}
+.side_link2 a:visited {
+	TEXT-DECORATION: none;
+	color: #FFFFFF;
+}
+.side_link2 a:hover {
+	TEXT-DECORATION: none;
+	color: #E4D3C0;
+}
+.side_link2 a:active {
+	TEXT-DECORATION: none;
+	color: #FFFFFF;
+}
+.foot_link a:link {
+	TEXT-DECORATION: none;
+	color: #333333;
+}
+.foot_link a:visited {
+	TEXT-DECORATION: none;
+	color: #333333;
+}
+.foot_link a:hover {
+	TEXT-DECORATION: none;
+	color: #666666;
+}
+.foot_link a:active {
+	TEXT-DECORATION: none;
+	color: #333333;
+}
+h1 {
+	font-size: 12px;
+	font-weight: normal;
+	text-align: right;
+	width: 890px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #FFFFFF;
+	line-height: 14px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 11px;
+}
+#header {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 100px;
+	background-color: #1A1E21;
+}
+#header .head_logo {
+	float: left;
+	padding-left: 35px;
+}
+#header .head_link {
+	float: right;
+	margin-top: 37px;
+	padding-right: 10px;
+	padding-left: 5px;
+}
+.head_link a:hover img  { filter: progid:DXImageTransform.Microsoft.alpha(style=0, opacity=80)}
+#content {
+	width:1000px;
+	margin-right: auto;
+	margin-left: auto;
+/* 	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/content_bg.gif);
+	background-repeat: repeat-y; */
+	background-position: left;
+	
+}
+#content .flash {
+	background-color: #FFFFFF;
+	padding-top: 5px;
+}
+
+#side {
+	width: 190px;
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 25px;
+/* 	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/side_bg.gif);
+	background-repeat: no-repeat;
+	background-position: top; */
+	text-align: left;
+}
+#side .side_link {
+	margin-bottom: 10px;
+}
+.side_link a:hover img  { filter: progid:DXImageTransform.Microsoft.alpha(style=0, opacity=80)}
+#side .side_link2 {
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/side_link_bg.gif);
+	background-repeat: no-repeat;
+	height: 26px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+#side .side_link2 a {
+	height: 19px;
+	padding-top: 7px;
+	padding-left: 10px;
+	display: block;
+}
+#side .side_title {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+#side .search_box {
+	background-color: #CACACA;
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/search_box_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+#side .formfield1 {
+	/* width: 167px; */
+	width:132px;
+	margin-bottom: 5px;
+	padding:2px 0px;
+	border:1px solid #4D4D4D;
+}
+#side .formfield2 {
+	/* width: 163px; */
+	width:132px;
+	border:1px solid #4D4D4D;
+	padding:3px 0px;
+	vertical-align:bottom;
+}
+
+.button{
+	width:36px;
+	color:#FFFFFF;
+	border:none;
+	font-size:12px;
+	vertical-align:bottom;
+}
+
+#side .btn_box {
+	text-align: center;
+	margin-top: 15px;
+}
+	
+
+/* 左サイド追加CSS */
+
+#side ul{
+	margin:0px 0px 40px;
+	padding:0px;
+	list-style-type:none;
+}
+
+#side ul li{
+	margin-bottom:25px;
+	margin-left:1em;
+}
+
+.side_title{
+	margin:5px 0px 25px;
+}
+
+.side_infotxt{
+	margin:0px 0px 0px 1em;
+	color:#585858;
+	font-family:12px;
+}
+
+/* 左サイド追加CSS（ここまで） */
+
+#pankuzu li {
+	list-style-type: none;
+	display: inline;
+}
+#main {
+	float: right;
+	width:775px;
+	margin-top: 15px;
+}
+#main .flash {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#main p {
+	margin-bottom: 10px;
+}
+
+#main h2 {
+	font-size: 16px;
+	font-weight: bold;
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/h2_bg.gif);
+	background-repeat: no-repeat;
+	padding-left: 12px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 18px;
+	color: #FFFFFF;
+	height: 28px;
+	padding-top: 12px;
+}
+#main h3 {
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/h3_bg.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	color: #3A3A3A;
+	padding-left: 10px;
+	line-height: 16px;
+	padding-bottom: 8px;
+}
+#main h4 {
+	font-size: 16px;
+	color: #333333;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding-bottom: 6px;
+	padding-left: 5px;
+	line-height: 18px;
+}
+#main ul.content1 li {
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/arrow1.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 12px;
+	list-style-type: none;
+}
+#main ul.content2 li {
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/arrow4.gif);
+	background-repeat: no-repeat;
+	background-position: left 6px;
+	padding-left: 12px;
+	list-style-type: none;
+}
+#main .indent {
+	padding-right: 10px;
+	padding-left: 10px;
+	margin:15px 0px;
+}
+
+#main .top_title {
+	margin-bottom: 15px;
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/top_title1_bg.gif);
+	background-repeat: no-repeat;
+	height: 20px;
+	padding-top: 7px;
+	padding-left: 28px;
+}
+
+#main .top_title2 {
+	margin-bottom: 15px;
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/top_title2_bg.gif);
+	background-repeat: no-repeat;
+	height: 20px;
+	padding-top: 7px;
+	padding-left: 30px;
+}
+
+
+#main .top_box1 {
+	width: 675px;
+	padding-bottom: 20px;
+}
+#main .top_box3 {
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/top_box2_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	margin-bottom: 20px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #E3E3E3;
+	border-bottom-color: #E3E3E3;
+	border-left-color: #E3E3E3;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+#main .top_text {
+	width: 415px;
+}
+#main .top_box_left {
+	float: left;
+	width: 480px;
+}
+#main .top_box_right {
+	float: right;
+	width: 180px;
+}
+#main .top_link {
+	margin-bottom: 10px;
+}
+.top_link a:hover img  { filter: progid:DXImageTransform.Microsoft.alpha(style=0, opacity=80)}
+#main .item_box1 {
+	width: 480px;
+	margin-bottom: 5px;
+}
+#main .item_box2 {
+	float: left;
+	width: 146px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+#main .item_box3 {
+	text-align: center;
+}
+#main .item_box3 img {
+	margin-bottom: 15px;
+}
+#main .item_box4 {
+	width: 675px;
+}
+#main .item_box5 {
+	float: left;
+	width: 146px;
+	margin-bottom: 15px;
+	padding-left: 11px;
+	padding-right: 11px;
+}
+
+#main .item_pic {
+	margin-bottom: 5px;
+}
+
+#main .item_text1 {
+}
+#main .item_text2 {
+	font-weight: bold;
+	text-align: center;
+}
+#main .line_box {
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/line1.gif);
+	background-repeat: repeat-x;
+	height: 1px;
+	margin-bottom: 15px;
+	background-position: bottom;
+	line-height: 0px;
+	font-size: 0px;
+	margin-top: 15px;
+}
+#main .content_box {
+	width: 655px;
+	margin-bottom: 15px;
+}
+#main .content_box2 {
+	width: 675px;
+	margin-bottom: 15px;
+}
+#main .content_box_left {
+	float: left;
+}
+#main .content_box_right {
+	float: right;
+	width: 250px;
+	margin-left:30px;
+}
+
+#main table {
+	border-collapse: collapse;
+}
+#main table.table1 {
+	margin-bottom: 15px;
+	width: 80%;
+}
+#main table.table2 {
+	border-collapse: separate;
+	width: 100%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 3px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #6D5D46;
+}
+#main table.table2 th {
+	padding: 10px;
+	background-color: #F5F5F5;
+	text-align: left;
+	width: 130px;
+}
+
+#main table.table2 td {
+	padding: 10px;
+}
+#main .td_gray {
+	background-color: #F5F5F5;
+	padding: 10px;
+	border: 1px solid #CCCCCC;
+}
+#main .td_white {
+	background-color: #FFFFFF;
+	padding: 10px;
+	border: 1px solid #CCCCCC;
+}
+#main .td_yellow {
+	background-color: #F8F7F2;
+	padding: 10px;
+	border: 1px solid #CCCCCC;
+	width: 150px;
+}
+#main .pagenavi {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+#main .search_result {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	padding-bottom: 10px;
+}
+#main .search_box {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* 左サイド検索フォーム追加CSS */
+
+.searchbox{
+	width:175px;
+}
+
+/* 左サイド検索フォーム追加CSS（ここまで） */
+
+#main ul.guide li {
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/arrow3.gif);
+	background-repeat: no-repeat;
+	background-position: left 5px;
+	padding-left: 15px;
+	list-style-type: none;
+}
+#main .guide_link {
+	float: left;
+	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/arrow2.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-right: 10px;
+	padding-left: 18px;
+	width: 135px;
+}
+.font_b {
+	font-weight: bold;
+}
+#content .top_btn {
+	padding-right: 10px;
+	margin-top: 40px;
+	margin-bottom: 6px;
+	text-align: right;
+}
+
+#footer {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D8D8D8;
+	padding-bottom: 10px;
+	font-size: 12px;
+	line-height: 14px;
+	color: #333333;
+}
+#footer .foot_link {
+	float: left;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+#footer .foot_copyright {
+	float: right;
+	padding-right: 10px;
+	margin-top: 10px;
+	
+}
+
+
+
+
+
+/*****************************************************
+
+ header
+
+*****************************************************/
+
+#header-wrap{
+	width:1000px;
+	margin:auto;
+	text-align:center;
+}
+
+.header-area{
+	width:1000px;
+	height:57px;
+	margin:30px auto 15px;
+	text-align:center;
+}
+
+.header-area h1{
+	text-align:center;
+	padding:0px;
+}
+
+.header-area p{
+	text-align:right;
+}
+
+.head-navibox{
+	width:1000px;
+	height:26px;
+	padding-top:10px;
+	background:url(http://img13.shop-pro.jp/PA01089/996/etc/hed_nv-line.gif) repeat-x;
+}
+
+.head-navi{
+	width:1000px;
+	height:26px;
+	margin:auto;
+}
+
+.head-navi ul{
+	display:inline;
+	text-align:center;
+	padding-left:50px;
+}
+
+.head-navi ul li{
+	list-style-type:none;
+	display:inline;
+	padding-right:60px;
+}
+
+
+
+
+/*****************************************************
+
+ main
+
+*****************************************************/
+
+#topmain{
+	width:1000px;
+	margin:15px auto 0px;
+	text-align:center;
+}
+
+.top-main{
+	margin-bottom:30px;
+}
+
+.top-contents{
+	width:1000px;
+	text-align:left;
+	margin-bottom:20px;
+}
+
+.top-menu{
+	width:800px;
+	margin:10px 0px 0px 100px;
+}
+
+	.top-menu td{
+		padding-bottom:20px;
+		text-align:center;
+		vertical-align:top;
+		background-color:#FFFFFF;
+	}
+
+.top-information{
+	margin:15px 0px 0px 100px;
+	color:#585858;
+	font-family:"ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+	font-size:12px;
+}
+
+.top-links{
+	width:430px;
+	margin:10px 0px 0px 70px;
+}
+
+	.top-links td{
+		padding-bottom:20px;
+		text-align:center;
+		vertical-align:top;
+		background:none!important;
+	}
+
+
+
+
+/*****************************************************
+
+ footer
+
+*****************************************************/
+
+#footer-area{
+	width:1000px;
+	margin:auto;
+	height:110px;
+	padding-bottom:20px;
+	text-align:center;
+	background:url(http://img13.shop-pro.jp/PA01089/996/etc/foot_line.gif) repeat-x bottom;
+}
+
+.footerbox{
+	margin:0px auto;
+	width:1000px;
+}
+
+.foot-shopinfo{
+	width:1000px;
+	margin:auto;
+	text-align:center;
+	background:url(http://img13.shop-pro.jp/PA01089/996/etc/foot_bk.jpg) no-repeat top;
+}
+
+.foot-shopinfo_box{
+	width:1000px;
+	margin:0px auto;
+	text-align:center;
+}
+
+.foot-shopinfo_link{
+	width:360px;
+	float:left;
+}
+
+.foot-shopinfo_txt{
+	width:270px;
+	float:right;
+}
+
+	.foot-shopinfo_txt p{
+		margin-top:11px;
+	}
+
+.foot-shopinfo_infotxt{
+	width:850px;
+	clear:both;
+	text-align:center;
+	margin:auto;
+	overflow:hidden;
+	padding-top:10px;
+	padding-left:45px;
+}
+	
+	.foot-shopinfo_infotxt li{
+		list-style-type:none;
+		display:inline;
+		float:left;
+	}
+
+
+
+.copyright{
+	width:1000px;
+	margin: 0px auto 15px;
+	padding:20px 0px;
+	text-align:center;
+	background:url(http://img13.shop-pro.jp/PA01089/996/etc/foot_line2.gif) repeat-x top;
+}
+
+.foot-support{
+	width:1000px;
+	margin:auto;
+}
+
+.foot-support .top-menu{
+	margin-left:0px;
+}
+
+
+/*****************************************************
+
+ free page
+
+*****************************************************/
+
+
+#order{
+	width:775px;
+	font-family:"ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+	color:#585858;
+	font-size:13px;
+	float:right;
+	overflow:hidden;
+	margin-top: 20px;
+}
+
+.order_hed{
+	width:765px;
+	text-align:right;
+	margin-bottom:20px;
+}
+
+	.order_hed p{
+		margin:10px 0px 0px;
+	}
+
+.message{
+	width:765px;
+	height:112px;
+	background:url(http://img13.shop-pro.jp/PA01089/996/etc/order_copy.jpg) no-repeat;
+	position:relative;
+}
+
+	.message p{
+		width:670px;
+		line-height:20px;
+		position:absolute;
+		top:25px;
+		left:40px;
+	}
+
+.order-sheet{
+	width:765px;
+	margin:15px 0px 50px;
+}
+
+	.order-sheet img{
+		margin-right:1em;
+		vertical-align:bottom;
+	}
+	
+	.order-sheet strong{
+		color:#FF0000;
+		font-weight:normal;
+	}
+
+
+.order-sample{
+	width:765px;
+	margin:15px 0px;
+}
+
+.order-sample img{
+	margin-left:15px;
+}
+
+
+
+
