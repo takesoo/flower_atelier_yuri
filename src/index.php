@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FlowerAterierYuri</title>
-  <link rel="stylesheet" href="css/kyoutu.css">
+  <?php $uri = $_SERVER["REQUEST_URI"]; ?>
+  <link rel="stylesheet" href="css/<?php echo $uri; ?>.css">
 </head>
 <body>
-  <?= include('html/kyoutu.html') ?>
+  <!-- <?php echo $uri; ?> -->
+  <?= include('html/'.$uri.".html") ?>
 </body>
 </html>
