@@ -664,6 +664,8 @@ h1 {
 *****************************************************/
 
 #footer-area{
+	width: 1000px;
+	margin: 0 auto;
 	background:url(http://img13.shop-pro.jp/PA01089/996/etc/foot_line.gif) repeat-x bottom;
 }
 
@@ -673,20 +675,13 @@ h1 {
 }
 
 .foot-shopinfo{
-	/* width:100%; */
-	/* display: flex; */
-	/* justify-content: space-around; */
-	/* margin:auto; */
-	/* text-align:center; */
 	background:url(http://img13.shop-pro.jp/PA01089/996/etc/foot_bk.jpg) no-repeat top;
 }
 
 .foot-shopinfo_box{
 	display: flex;
 	justify-content: space-between;
-	/* width:60%; */
-	/* margin:0px auto; */
-	/* text-align:center; */
+	align-items: center;
 }
 
 .foot-shopinfo_link{
@@ -695,9 +690,6 @@ h1 {
 	width: 50%;
 	text-align: center;
 	padding: 1em 3em;
-
-	/* width:360px;
-	float:left; */
 }
 
 .foot-shopinfo_link li {
@@ -705,31 +697,15 @@ h1 {
 	width: 10em;
 }
 
-.foot-shopinfo_txt{
-	/* width:40%; */
-	/* float:right; */
-}
-
 	.foot-shopinfo_txt p{
-		margin-top:11px;
+		font-size: 0.5em;
 	}
 
 .foot-shopinfo_infotxt{
-	width:850px;
-	clear:both;
-	text-align:center;
-	margin:auto;
-	overflow:hidden;
-	padding-top:10px;
-	padding-left:45px;
+	font-size: 0.5em;
+	text-align: center;
+	padding: 2em 0 4em;
 }
-
-	.foot-shopinfo_infotxt li{
-		list-style-type:none;
-		display:inline;
-		float:left;
-	}
-
 
 
 .copyright{
