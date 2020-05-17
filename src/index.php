@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="css/kyoutu.css?<?= strtotime('now') ?>">
   <!-- <link rel="stylesheet" href="css/mail_magazine.css?<?= strtotime('now') ?>"> -->
   <!-- <link rel="stylesheet" href="css/my_account.css?<?= strtotime('now') ?>"> -->
-  <link rel="stylesheet" href="css/option.css?<?= strtotime('now') ?>">
+  <!-- <link rel="stylesheet" href="css/option.css?<?= strtotime('now') ?>"> -->
   <!-- <link rel="stylesheet" href="css/otoiawase.css?<?= strtotime('now') ?>"> -->
   <link rel="stylesheet" href="css/syouhin_ichiran.css?<?= strtotime('now') ?>">
   <link rel="stylesheet" href="css/syouhin_syousai.css?<?= strtotime('now') ?>">
   <link rel="stylesheet" href="css/tokutei_syou_torihiki.css?<?= strtotime('now') ?>">
   <!-- <link rel="stylesheet" href="css/tomodachi.css?<?= strtotime('now') ?>"> -->
-  <link rel="stylesheet" href="css/top.css?<?= strtotime('now') ?>">
+  <!-- <link rel="stylesheet" href="css/top.css?<?= strtotime('now') ?>"> -->
 </head>
 <body>
   <!-- <?php echo $uri; ?> -->
