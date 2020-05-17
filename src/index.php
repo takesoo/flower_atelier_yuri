@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/syouhin_syousai.css?<?= strtotime('now') ?>">
   <link rel="stylesheet" href="css/tokutei_syou_torihiki.css?<?= strtotime('now') ?>">
   <!-- <link rel="stylesheet" href="css/tomodachi.css?<?= strtotime('now') ?>"> -->
-  <link rel="stylesheet" href="top.css?<?= strtotime('now') ?>">
+  <link rel="stylesheet" href="css/top.css?<?= strtotime('now') ?>">
 </head>
 <body>
   <!-- <?php echo $uri; ?> -->
