@@ -1,72 +1,57 @@
 <div id="main">
-    <ul id="pankuzu">
-      <li><a href="./">HOME</a></li>
-      <li><{if $bid_name != ""}> &gt;&gt; <a href='<{$bid_link}>'><{$bid_name}></a><{/if}></li>
-      <li><{if $sid_name != ""}> &gt;&gt; <a href='<{$sid_link}>'><{$sid_name}></a><{/if}></li>
-      <li><{if $product_name != ""}> &gt;&gt; <a href='<{$product_link}>'><{$product_name}></a><{/if}></li>
-    </ul>
-    <!--// パンくずナビ -->
-    <{if $bid_name == "ラッピング"}>
-  <div class="order_hed">
-    	
-    <img src="http://img13.shop-pro.jp/PA01089/996/etc/category04_w-option.jpg" alt="WRAPPING OPTION" title="シーズンや用途に合わせた素敵なラッピングオプション" width="749" height="180">
-    		
-    <p>普通のギフトでは物足りないちょっとしたアクセントや拘りのある方に</p>
-    
-</div>
-    <{/if}>
-    <{if $bid_name == "おすすめ商品"}>
-    
-  <div class="order_hed">
-    	
-      <img src="http://img13.shop-pro.jp/PA01089/996/etc/category01_recommend.jpg" alt="YURI RECOMMEND" title="新作やおすすめの商品" width="748" height="180">
-    		
-            <p>その時のトレンド、人気の高い商品をピックアップ</p>
-    
-  </div>
-    <{/if}>
-    <{if $bid_name == "贈り物"}>
-  <div class="order_hed">
-    	
-        <img src="http://img13.shop-pro.jp/PA01089/996/etc/category07_gift.jpg" alt="GIFT" title="贈り物" width="748" height="180">
-    		
-            <p>パッケージされている商品やプレゼントに相応しいパッケージング</p>
-    
-</div>
-    <{/if}>
-    <{if $bid_name == "雑貨"}>
-   <div class="order_hed">
-    	
-        <img src="http://img13.shop-pro.jp/PA01089/996/etc/category06_relaxation.jpg" alt="INTERIOR" title="インテリア雑貨" width="748" height="180">
-    		
-            <p>フラワーが一層引き立つインテリア雑貨</p>
-    
-</div>
-    <{/if}>
-    <{if $bid_name == "アクセサリー"}>
-   <div class="order_hed">
-    	
-        <img src="http://img13.shop-pro.jp/PA01089/996/etc/category02_f-accesorry.jpg" alt="FLOWER ACCESORRY" title="お花のアクセサリー" width="737" height="181">
-    		
-            <p>ちょっとしたパーティー、結婚式等で身につけられるアクセサリー</p>
-    
-</div>
-    <{/if}>
-    <{if $bid_name == "アロマキャンドル等"}>
-    <div class="order_hed">
-    	
-        <img src="http://img13.shop-pro.jp/PA01089/996/etc/category05_relaxation.jpg" alt="RELAXATION" title="アロマキャンドルやディフューザー等" width="748" height="180">
-    		
-            <p>落ち着く効果をもたらす香り</p>
-    
-</div>
-    <{/if}>
-   
-   
+  <ul id="pankuzu">
+    <li><a href="./">HOME</a></li>
+    <li><{if $bid_name != ""}> &gt;&gt; <a href='<{$bid_link}>'><{$bid_name}></a><{/if}></li>
+    <li><{if $sid_name != ""}> &gt;&gt; <a href='<{$sid_link}>'><{$sid_name}></a><{/if}></li>
+    <li><{if $product_name != ""}> &gt;&gt; <a href='<{$product_link}>'><{$product_name}></a><{/if}></li>
+  </ul>
+  <!--// パンくずナビ -->
 
-    <{if $bid_name != "おすすめ商品" && $bid_name != "贈り物" && $bid_name != "ラッピング" && $bid_name != "雑貨" && $bid_name != "アクセサリー" && $bid_name != "アロマキャンドル等"}>
+  <{if $bid_name == "ラッピング"}>
+    <div class="order_hed">
+      <img src="http://img13.shop-pro.jp/PA01089/996/etc/category04_w-option.jpg" alt="WRAPPING OPTION" title="シーズンや用途に合わせた素敵なラッピングオプション" width="749" height="180">
+      <p>普通のギフトでは物足りないちょっとしたアクセントや拘りのある方に</p>
+    </div>
+  <{/if}>
+
+  <{if $bid_name == "おすすめ商品"}>
+    <div class="order_hed">
+      <img src="http://img13.shop-pro.jp/PA01089/996/etc/category01_recommend.jpg" alt="YURI RECOMMEND" title="新作やおすすめの商品" width="748" height="180">
+        <p>その時のトレンド、人気の高い商品をピックアップ</p>
+    </div>
+  <{/if}>
+
+  <{if $bid_name == "贈り物"}>
+    <div class="order_hed">
+      <img src="http://img13.shop-pro.jp/PA01089/996/etc/category07_gift.jpg" alt="GIFT" title="贈り物" width="748" height="180">
+      <p>パッケージされている商品やプレゼントに相応しいパッケージング</p>
+    </div>
+  <{/if}>
+
+  <{if $bid_name == "雑貨"}>
+    <div class="order_hed">
+      <img src="http://img13.shop-pro.jp/PA01089/996/etc/category06_relaxation.jpg" alt="INTERIOR" title="インテリア雑貨" width="748" height="180">
+      <p>フラワーが一層引き立つインテリア雑貨</p>
+    </div>
+  <{/if}>
+
+  <{if $bid_name == "アクセサリー"}>
+    <div class="order_hed">
+      <img src="http://img13.shop-pro.jp/PA01089/996/etc/category02_f-accesorry.jpg" alt="FLOWER ACCESORRY" title="お花のアクセサリー" width="737" height="181">
+      <p>ちょっとしたパーティー、結婚式等で身につけられるアクセサリー</p>
+    </div>
+  <{/if}>
+
+  <{if $bid_name == "アロマキャンドル等"}>
+    <div class="order_hed">
+      <img src="http://img13.shop-pro.jp/PA01089/996/etc/category05_relaxation.jpg" alt="RELAXATION" title="アロマキャンドルやディフューザー等" width="748" height="180">
+      <p>落ち着く効果をもたらす香り</p>
+    </div>
+  <{/if}>
+
+  <{if $bid_name != "おすすめ商品" && $bid_name != "贈り物" && $bid_name != "ラッピング" && $bid_name != "雑貨" && $bid_name != "アクセサリー" && $bid_name != "アロマキャンドル等"}>
     <h2><{$bid_name}></h2>
-    <{/if}>
+  <{/if}>
     <!-- サブカテゴリー -->
     <!--
 <{if $subcategory_num != 0}>
@@ -87,16 +72,16 @@
 	<{/if}>
 	<{/section}>
 
-	
+
 <{/if}>
 
 -->
     <!--// サブカテゴリー -->
     <{if $productlist_num != 0}>
-    <!--	
-	
+    <!--
+
 	<div class="category_title"><{if $sid_name != ""}><{$sid_name}><{elseif $bid_name != ""}><{$bid_name}><{/if}></div>
-	
+
 	<div class="sort">
 	<span>並び順を変更</span>[
 	<{if $productlist_sort_now != ""}><span><a href="<{$productlist_sort_def}>">おすすめ順</a></span><{else}><strong>おすすめ順</strong><{/if}>
@@ -104,24 +89,47 @@
 	|<{if $productlist_sort_now != "n"}><span><a href="<{$productlist_sort_new}>">新着順</a></span><{else}><strong>新着順</strong><{/if}>
 	]
 	</div>
-	
+
 	<div class="pagenavi">全 [<span><{$productlist_num}></span>] 商品中 [<span><{$productlist_snum}></span>-<span><{$productlist_enum}></span>] 商品を表示しています。</div>
-	
+
 	-->
-    <div class="item_box4"> <{section name=num loop=$productlist}>
-      <div class="item_box5">
-        <div class="item_pic"><{if $productlist[num].img_url != ""}><a href="<{$productlist[num].link_url}>" /><img src="<{$productlist[num].img_url}>" class="border" alt="<{$productlist[num].name}>" /></a><{else}><a href="<{$productlist[num].link_url}>" /><img src="http://img.shop-pro.jp/tmpl_img/17/noimg.gif" class="border" /></a><{/if}></div>
-        <div class="item_text1"><strong><a href="<{$productlist[num].link_url}>" /><{$productlist[num].name}></a></strong><br />
-          値段 <span class="font_b"><{$productlist[num].price}></span> <{if $productlist[num].s_expl <> ""}><br />
-          <{$productlist[num].s_expl}><{/if}></div>
-      </div>
-      <!-- 4個で改行(最後は含まない) -->
-      <{if $smarty.section.num.iteration % 4 == 0 and $smarty.section.num.last == false}>
-      <div class="clear"></div>
-      <{/if}>
+    <div class="item_box4">
+      <{section name=num loop=$productlist}>
+        <div class="item_box5">
+          <div class="item_pic">
+            <{if $productlist[num].img_url != ""}>
+              <a href="<{$productlist[num].link_url}>" />
+                <img src="<{$productlist[num].img_url}>" class="border" alt="<{$productlist[num].name}>" />
+              </a>
+            <{else}>
+              <a href="<{$productlist[num].link_url}>" />
+                <img src="http://img.shop-pro.jp/tmpl_img/17/noimg.gif" class="border" />
+              </a>
+            <{/if}>
+          </div>
+          <div class="item_text1">
+            <strong>
+              <a href="<{$productlist[num].link_url}>" />
+                <{$productlist[num].name}>
+              </a>
+            </strong><br />
+            値段
+            <span class="font_b">
+              <{$productlist[num].price}>
+            </span>
+            <{if $productlist[num].s_expl <> ""}><br />
+              <{$productlist[num].s_expl}>
+            <{/if}>
+          </div>
+        </div>
+        <!-- 4個で改行(最後は含まない) -->
+        <{if $smarty.section.num.iteration % 4 == 0 and $smarty.section.num.last == false}>
+          <div class="clear"></div>
+        <{/if}>
       <{/section}>
       <div class="clear"></div>
     </div>
+
     <div class="indent">全 [<span><{$productlist_num}></span>] 商品中 [<span><{$productlist_snum}></span>-<span><{$productlist_enum}></span>] 商品を表示しています。
       <div class="pagenavi"><{if $productlist_prev_page != ""}><a href="<{$productlist_prev_page}>">前のページ</a><{else}>前のページ<{/if}> | <{if $productlist_next_page != ""}><a href="<{$productlist_next_page}>">次のページ</a><{else}>次のページ<{/if}></div>
     </div>
