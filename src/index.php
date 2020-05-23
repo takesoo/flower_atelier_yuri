@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/tokutei_syou_torihiki.css?<?= strtotime('now') ?>">
   <!-- <link rel="stylesheet" href="css/tomodachi.css?<?= strtotime('now') ?>"> -->
   <!-- <link rel="stylesheet" href="css/top.css?<?= strtotime('now') ?>"> -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
   <!-- <?php echo $uri; ?> -->
