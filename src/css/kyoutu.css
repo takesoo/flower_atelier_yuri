@@ -36,6 +36,11 @@ a:active {
 	color: #705C43;
 
 }
+
+ul {
+	list-style: none;
+}
+
 .side_link2 a:link {
 	TEXT-DECORATION: none;
 	color: #FFFFFF;
