@@ -27,8 +27,8 @@ a:visited {
 
 }
 a:hover {
-	TEXT-DECORATION: none;
-	color: #8A7253;
+	TEXT-DECORATION: none !important; 
+	color: #8A7253 !important;
 
 }
 a:active {
