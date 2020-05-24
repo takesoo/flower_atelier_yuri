@@ -576,35 +576,58 @@ h1 {
 	font-size: 0.5em;
 }
 
-.head-navibox{
-	width:1000px;
-	height:26px;
-	padding-top:10px;
-	background:url(http://img13.shop-pro.jp/PA01089/996/etc/hed_nv-line.gif) repeat-x;
+@media screen and (min-width: 768px) {
+
+	.head-navibox{
+		width:1000px;
+		height:26px;
+		padding-top:10px;
+		background:url(http://img13.shop-pro.jp/PA01089/996/etc/hed_nv-line.gif) repeat-x;
+	}
+
+	.head-navi{
+		width:800px;
+		height:26px;
+		margin:auto;
+	}
+	
+	.head-navi ul{
+		/* display:inline; */
+		display: flex;
+		justify-content: space-evenly;
+		text-align:center;
+		/* padding-left:50px; */
+	}
+	
+	.head-navi ul li{
+		list-style-type:none;
+		width: 15em;
+		/* display:inline; */
+		/* padding-right:60px; */
+	}
+
+	.head-navibar{
+		display: none;
+	}
 }
+	
+@media screen and (max-width: 768px){
+	#header-wrap{
+		width: 100%;
+	}
 
-.head-navi{
-	width:800px;
-	height:26px;
-	margin:auto;
+	.header-area{
+		width:100%;
+	}
+
+	.head-navibox{
+		display: none;
+	}
+	.head-navibar{
+		display: block;
+	}
+
 }
-
-.head-navi ul{
-	/* display:inline; */
-	display: flex;
-	justify-content: space-evenly;
-	text-align:center;
-	/* padding-left:50px; */
-}
-
-.head-navi ul li{
-	list-style-type:none;
-	width: 15em;
-	/* display:inline; */
-	/* padding-right:60px; */
-}
-
-
 
 
 /*****************************************************
