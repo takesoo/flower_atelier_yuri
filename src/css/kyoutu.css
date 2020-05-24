@@ -17,13 +17,13 @@ img {
  	border:none;
 }
 a:link {
-	TEXT-DECORATION: none;
-	color: #705C43;
+	TEXT-DECORATION: none !important;
+	color: #705C43 !important;
 
 }
 a:visited {
-	TEXT-DECORATION: none;
-	color: #705C43;
+	TEXT-DECORATION: none !important;
+	color: #705C43 !important;
 
 }
 a:hover {
@@ -32,8 +32,8 @@ a:hover {
 
 }
 a:active {
-	TEXT-DECORATION: none;
-	color: #705C43;
+	TEXT-DECORATION: none !important;
+	color: #705C43 !important;
 
 }
 
@@ -607,10 +607,9 @@ h1 {
 	.head-navi ul li{
 		list-style-type:none;
 		width: 15em;
-		/* display:inline; */
-		/* padding-right:60px; */
+		color: #8A7253;
 	}
-
+	
 	.head-navibar{
 		display: none;
 	}
