@@ -581,6 +581,10 @@ h1 {
 	font-size: 0.5em;
 }
 
+.login {
+	text-align: right;
+}
+
 .shopping-category {
 	position: relative;
 }
