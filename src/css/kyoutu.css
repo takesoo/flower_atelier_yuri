@@ -581,15 +581,21 @@ h1 {
 	font-size: 0.5em;
 }
 
-.shopping-category {
-	display: block;
+.shopping-category>li{
+	padding: 0;
+	height: 0;
 	background-color: rgb(194, 174, 149);
-	/* text-align: left; */
+	visibility: hidden;
+	opacity: 0;
+	transition: 1s;
 
 }
 
-.shopping-category>li{
+.shopping-category.active>li{
 	padding: 0.5em;
+	height: auto;
+	visibility: visible;
+	opacity: 1;
 }
 
 

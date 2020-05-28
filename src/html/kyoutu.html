@@ -11,10 +11,10 @@
             <i class="fas fa-home"></i>
           </li>
         	<li>
-            <a href="#" onmouseover=this.textContent='お買い物' onmouseout=this.textContent='SHOPPING'>SHOPPING
+            <a id="shopping_btn" href="javascript:void(0)" onmouseover=this.textContent='お買い物' onmouseout=this.textContent='SHOPPING'>SHOPPING
             </a>
             <i class="fas fa-shopping-cart"></i>
-            <ul class="shopping-category">
+            <ul id="shopping-category" class="shopping-category">
               <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&amp;cbid=970685&amp;csid=0" onmouseover=this.textContent='お花' onmouseout=this.textContent='FLOWER'>FLOWER</a></li>
               <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&amp;cbid=970685&amp;csid=0" onmouseover=this.textContent='ハーブ' onmouseout=this.textContent='HERB'>HERB</a></li>
               <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&amp;cbid=970685&amp;csid=0" onmouseover=this.textContent='キャンドル' onmouseout=this.textContent='CANDLE'>CANDLE</a></li>
@@ -263,4 +263,17 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
     }
     window_size_switch_func();
     });
+</script>
+
+<script>
+  // ヘッダーお買い物サブカテゴリープルダウン
+  let shopping_btn = document.getElementById('shopping_btn')
+  let shopping_category = document.getElementById('shopping-category')
+  shopping_btn.addEventListener('click', ()=>{
+    if (shopping_category.classList.contains('active')) {
+      shopping_category.classList.remove('active')
+    } else {
+      shopping_category.classList.add('active')
+    }
+  }, false)
 </script>
