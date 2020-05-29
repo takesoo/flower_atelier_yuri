@@ -661,62 +661,6 @@ h1 {
 
 /*****************************************************
 
- main
-
-*****************************************************/
-
-#topmain{
-	width:1000px;
-	margin:15px auto 0px;
-	text-align:center;
-}
-
-.top-main{
-	margin-bottom:30px;
-}
-
-.top-contents{
-	width:1000px;
-	text-align:left;
-	margin-bottom:20px;
-}
-
-.top-menu{
-	width:800px;
-	margin:10px 0px 0px 100px;
-}
-
-	.top-menu td{
-		padding-bottom:20px;
-		text-align:center;
-		vertical-align:top;
-		background-color:#FFFFFF;
-	}
-
-.top-information{
-	margin:15px 0px 0px 100px;
-	color:#585858;
-	font-family:"ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
-	font-size:12px;
-}
-
-.top-links{
-	width:430px;
-	margin:10px 0px 0px 70px;
-}
-
-	.top-links td{
-		padding-bottom:20px;
-		text-align:center;
-		vertical-align:top;
-		background:none!important;
-	}
-
-
-
-
-/*****************************************************
-
  footer
 
 *****************************************************/
