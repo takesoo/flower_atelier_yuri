@@ -810,7 +810,7 @@ h1 {
 
 /*****************************************************
 
- free page
+ special order page
 
 *****************************************************/
 
@@ -875,6 +875,71 @@ h1 {
 	margin-left:15px;
 }
 
+/*****************************************************
 
+ special order page
+
+*****************************************************/
+
+#import{
+	width: 75%;
+	font-family:"ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+	color:#585858;
+	font-size:13px;
+	float:right;
+	overflow:hidden;
+	margin-top: 20px;
+}
+
+.import_hed{
+	width:765px;
+	text-align:right;
+	margin-bottom:20px;
+}
+
+	.import_hed p{
+		margin:10px 0px 0px;
+	}
+
+.message{
+	width:765px;
+	height:112px;
+	background:url(http://img13.shop-pro.jp/PA01089/996/etc/order_copy.jpg) no-repeat;
+	position:relative;
+}
+
+	.message p{
+		width:670px;
+		line-height:20px;
+		position:absolute;
+		top:25px;
+		left:40px;
+	}
+
+.order-sheet{
+	width:765px;
+	margin:15px 0px 50px;
+}
+
+	.order-sheet img{
+		margin-right:1em;
+		vertical-align:bottom;
+	}
+
+	.order-sheet strong{
+		color:#FF0000;
+		font-weight:normal;
+	}
+
+
+.import-sample{
+	margin:15px 0px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.instagram-media {
+	width: 25% !important;
+}
 
 
