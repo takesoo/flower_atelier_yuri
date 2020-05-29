@@ -877,7 +877,7 @@ h1 {
 
 /*****************************************************
 
- special order page
+ import page
 
 *****************************************************/
 
@@ -892,7 +892,6 @@ h1 {
 }
 
 .import_hed{
-	width:765px;
 	text-align:right;
 	margin-bottom:20px;
 }
@@ -901,32 +900,29 @@ h1 {
 		margin:10px 0px 0px;
 	}
 
-.message{
-	width:765px;
+.import-message{
 	height:112px;
 	background:url(http://img13.shop-pro.jp/PA01089/996/etc/order_copy.jpg) no-repeat;
 	position:relative;
 }
 
-	.message p{
-		width:670px;
+	.import-message p{
 		line-height:20px;
 		position:absolute;
 		top:25px;
 		left:40px;
 	}
 
-.order-sheet{
-	width:765px;
+.import-order-sheet{
 	margin:15px 0px 50px;
 }
 
-	.order-sheet img{
+	.import-order-sheet img{
 		margin-right:1em;
 		vertical-align:bottom;
 	}
 
-	.order-sheet strong{
+	.import-order-sheet strong{
 		color:#FF0000;
 		font-weight:normal;
 	}
@@ -939,7 +935,10 @@ h1 {
 }
 
 .instagram-media {
-	width: 25% !important;
+	width: 40% !important;
+	min-width: 25% !important;
+	max-height: 50em;
+	overflow: scroll;
 }
 
 
