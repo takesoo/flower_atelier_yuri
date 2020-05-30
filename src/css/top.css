@@ -98,7 +98,21 @@ a:active {
 		vertical-align:top;
 	}
 
+@media screen and (max-width: 768px) {
+	#topmain{
+		width:100%;
+	}	
 
+	.top-main img{
+		width: 100%;
+	}
+
+	.top-contents{
+		width: 100%;
+		overflow: hidden;
+	}
+
+}
 
 
 
