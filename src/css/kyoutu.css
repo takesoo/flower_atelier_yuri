@@ -640,13 +640,17 @@ h1 {
 
 }
 	
-@media screen and (max-width: 768px){
+@media screen and (min-width: 425px) and (max-width: 768px){
 	#header-wrap{
 		width: 100%;
 	}
 
 	.header-area{
-		width: 50%;
+		width: 45%;
+	}
+
+	.header-area img {
+		width: 100%;
 	}
 
 	.head-navibox{
@@ -658,6 +662,27 @@ h1 {
 
 }
 
+@media screen and (max-width: 425px){
+	#header-wrap{
+		width: 100%;
+	}
+
+	.header-area{
+		width: 60%;
+	}
+
+	.header-area img {
+		width: 100%;
+	}
+
+	.head-navibox{
+		display: none;
+	}
+	.head-navibar{
+		display: block;
+	}
+
+}
 
 /*****************************************************
 
