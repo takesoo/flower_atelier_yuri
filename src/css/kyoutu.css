@@ -660,26 +660,11 @@ h1 {
 		display: block;
 	}
 
-}
-
-@media screen and (max-width: 425px){
-	#header-wrap{
-		width: 100%;
-	}
-
-	.header-area{
-		width: 60%;
-	}
-
-	.header-area img {
-		width: 100%;
-	}
-
-	.head-navibox{
-		display: none;
-	}
-	.head-navibar{
-		display: block;
+	.header-navibar-btn{
+		border: 1px solid;
+		border-radius: 50%;
+		height: 4em;
+		width: 4em;
 	}
 
 }
