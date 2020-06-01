@@ -109,7 +109,14 @@ a:active {
 
 	.top-contents{
 		width: 100%;
+	}
+
+	.top-contents h3{
 		overflow: hidden;
+	}
+
+	.top-contents h3 img {
+		max-width: 994px;
 	}
 
 }

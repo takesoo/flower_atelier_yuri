@@ -750,7 +750,14 @@ h1 {
 
 	.footerbox{
 		width: 100%;
+	}
+
+	.footerbox h3 {
 		overflow: hidden;
+	}
+
+	.footerbox h3 img {
+		max-width: 994px;
 	}
 
 
