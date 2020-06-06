@@ -587,6 +587,7 @@ h1 {
 
 .shopping-category {
 	position: relative;
+	z-index: 1;
 }
 
 .shopping-category>li{
