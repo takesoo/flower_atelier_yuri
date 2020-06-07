@@ -46,70 +46,40 @@
   </div>
 
   <!-- スマホ用サイドメニュー -->
-  <div class="head-navibar">  
-    <button id="header-navibar-btn" class="header-navibar-btn">
-      <i class="fas fa-bars"></i><br>
-      <span>MENU</span>
-    </button>
-    <div id="mb-side">
-      <div class="searchbox">
-      <form action="<{$product_search_url}>" method="GET" />
-          <{$product_search_mode}>
-  
-        <select name="cid" class="formfield1">
-          <option value="">全ての商品から</option>
-          <{section name=num loop=$category}>
-          <option value="<{$category[num].id}>"><{$category[num].name}></option>
-          <{/section}>
-        </select>
-        <input name="keyword" type="text" class="formfield2"/>
-        <input type="image" class="button" src="http://img13.shop-pro.jp/PA01089/996/etc/search-button.gif" alt="商品検索" />
-      </form>
-    </div>
-    <p class="side_title"><img src="http://img13.shop-pro.jp/PA01089/996/etc/sidemenu_title.gif" alt="MENU" /></p>
-    <ul>
-      <li>
-        <a href="/" onmouseover=this.textContent='ホーム' onmouseout=this.textContent='HOME'>HOME
-        </a>
-        <i class="fas fa-home"></i>
-      </li>
-      <li>
-        <a id="pc_header_shopping_btn" href="javascript:void(0)" onmouseover=this.textContent='お買い物' onmouseout=this.textContent='SHOPPING'>SHOPPING
-        </a>
-        <i class="fas fa-shopping-cart"></i>
-        <ul id="pc_header_shopping_category" class="shopping-category">
-          <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621194&csid=0" onmouseover=this.textContent='お花' onmouseout=this.textContent='FLOWER'>FLOWER</a></li>
-          <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621197&csid=0" onmouseover=this.textContent='ハーブ' onmouseout=this.textContent='HERB'>HERB</a></li>
-          <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621199&csid=0" onmouseover=this.textContent='キャンドル' onmouseout=this.textContent='CANDLE'>CANDLE</a></li>
-          <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=970689&csid=0" onmouseover=this.textContent='雑貨' onmouseout=this.textContent='GOODS'>GOODS</a></li>
-          <li><a href="http://www.flower-atelier-yuri.com/?mode=f4" onmouseover=this.textContent='お買い物代行' onmouseout=this.textContent='IMPORT'>IMPORT</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621211&csid=0" onmouseover=this.textContent='レッスン' onmouseout=this.textContent='LESSON'>LESSON
-        </a>
-        <i class="fas fa-users"></i>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/floweratelieryuri/" target="_blank" onmouseover=this.textContent='ギャラリー' onmouseout=this.textContent='GALLARY'>GALLARY
-        </a>
-        <i class="fab fa-instagram"></i>
-      </li>
+  <div class="sp-header">
+    <div class="icon-hamburger fas fa-bars"><span></span></div>
+    <nav class="menu-container">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="/" onmouseover=this.textContent='ホーム' onmouseout=this.textContent='HOME'>HOME
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li class="menu-item"><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621194&csid=0" onmouseover=this.textContent='お花' onmouseout=this.textContent='FLOWER'>FLOWER</a></li>
+        <li class="menu-item"><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621197&csid=0" onmouseover=this.textContent='ハーブ' onmouseout=this.textContent='HERB'>HERB</a></li>
+        <li class="menu-item"><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621199&csid=0" onmouseover=this.textContent='キャンドル' onmouseout=this.textContent='CANDLE'>CANDLE</a></li>
+        <li class="menu-item"><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=970689&csid=0" onmouseover=this.textContent='雑貨' onmouseout=this.textContent='GOODS'>GOODS</a></li>
+        <li class="menu-item"><a href="http://www.flower-atelier-yuri.com/?mode=f4" onmouseover=this.textContent='お買い物代行' onmouseout=this.textContent='IMPORT'>IMPORT</a></li>
+        <li class="menu-item">
+          <a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621211&csid=0" onmouseover=this.textContent='レッスン' onmouseout=this.textContent='LESSON'>LESSON
+            <i class="fas fa-users"></i>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="https://www.instagram.com/floweratelieryuri/" target="_blank" onmouseover=this.textContent='ギャラリー' onmouseout=this.textContent='GALLARY'>GALLARY
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="https://secure.shop-pro.jp/?mode=inq&shop_id=PA01089996" onmouseover=this.textContent='お問い合わせ' onmouseout=this.textContent='CONTACT'>CONTACT
+            <i class="fas fa-at"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
-      <li>
-        <a href="https://secure.shop-pro.jp/?mode=inq&shop_id=PA01089996" onmouseover=this.textContent='お問い合わせ' onmouseout=this.textContent='CONTACT'>CONTACT
-        </a>
-        <i class="fas fa-at"></i>
-      </li>
-    </ul>
-  <p class="side_title"><img src="http://img13.shop-pro.jp/PA01089/996/etc/sideinfo_title.gif" alt="INFORMATION" /></p>
-      <p class="side_infotxt">
-        本日○○○○のフラワーが<br />
-        入荷しました！
-      </p>
-    </div>
-    </div>
-
+  <!-- スマホ用サイドメニューここまで -->
 
 </div>
 
@@ -311,4 +281,17 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
       sp_header_shopping_category.classList.add('active')
     }
   }, false)
+</script>
+
+<script>
+  jQuery('.icon-hamburger').on('click', function() {
+    jQuery('body').append('<div id="modal-overlay"></div>');
+    jQuery('#modal-overlay').fadeIn('1500');
+    jQuery('.menu-container .menu').fadeIn('1500');
+  });
+
+  jQuery(document).on('click', '#modal-overlay', function() {
+    jQuery('#modal-overlay').fadeOut('1500');
+    jQuery('.menu-container .menu').fadeOut('1500');
+  });
 </script>

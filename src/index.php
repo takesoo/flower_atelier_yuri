@@ -18,6 +18,7 @@
   <!-- <link rel="stylesheet" href="css/top.css?<?= strtotime('now') ?>"> -->
   <link rel="stylesheet" href="css/<?php echo $uri; ?>.css?<?= strtotime('now') ?>">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
   <!-- <?php echo $uri; ?> -->
