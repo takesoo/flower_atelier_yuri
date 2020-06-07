@@ -2,9 +2,6 @@
   <div class="header-area">
     <h1><a href="/"><img src="https://img13.shop-pro.jp/PA01089/996/etc/logo_black.gif?cmsp_timestamp=20200515184143" alt="FLOWER ATERIER YURI" width="239"></a></h1>
   </div>
-  <div class="login">
-    <a href="<{ $view_myaccount_url }>" >ログイン</a>
-  </div>
     <div class="head-navibox">
       <div class="head-navi">
         <ul>
@@ -35,11 +32,15 @@
             </a>
             <i class="fab fa-instagram"></i>
           </li>
-
           <li>
             <a href="https://secure.shop-pro.jp/?mode=inq&shop_id=PA01089996" onmouseover=this.textContent='お問い合わせ' onmouseout=this.textContent='CONTACT'>CONTACT
             </a>
             <i class="fas fa-at"></i>
+          </li>
+          <li>
+            <a href="<{ $view_myaccount_url }>" onmouseover=this.textContent="ログイン" onmouseout=this.textContent="LOG&nbsp;IN">LOG IN
+              <i class="fas fa-sign-in-alt"></i>
+            </a>  
           </li>
         </ul>
       </div>
@@ -47,7 +48,12 @@
 
   <!-- スマホ用サイドメニュー -->
   <div class="sp-header">
-    <div class="icon-hamburger fas fa-bars"><span></span></div>
+    <div class="icon-hamburger">
+      <button class="icon-hamburger-btn">
+        <i class="fas fa-bars"></i>
+        <span>MENU</span>
+      </button>
+    </div>
     <nav class="menu-container">
       <ul class="menu">
         <li class="menu-item">
@@ -71,13 +77,13 @@
           </a>
         </li>
         <li class="menu-item">
-          <a href="<{ $view_myaccount_url }>" >LOG IN ~ログイン~
-            <i class="fas fa-sign-in-alt"></i>
+          <a href="https://secure.shop-pro.jp/?mode=inq&shop_id=PA01089996">CONTACT ~お問い合わせ~
+            <i class="fas fa-at"></i>
           </a>
         </li>
         <li class="menu-item">
-          <a href="https://secure.shop-pro.jp/?mode=inq&shop_id=PA01089996">CONTACT ~お問い合わせ~
-            <i class="fas fa-at"></i>
+          <a href="<{ $view_myaccount_url }>" >LOG IN ~ログイン~
+            <i class="fas fa-sign-in-alt"></i>
           </a>
         </li>
       </ul>

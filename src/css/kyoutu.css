@@ -577,7 +577,6 @@ h1 {
 #header-wrap{
 	width:1000px;
 	margin:auto;
-	text-align:center;
 }
 
 .header-area{
@@ -595,10 +594,6 @@ h1 {
 .header-area p{
 	text-align:right;
 	font-size: 0.5em;
-}
-
-.login {
-	text-align: right;
 }
 
 .shopping-category {
@@ -676,6 +671,15 @@ h1 {
 }
 
 /* モーダル表示 */
+
+.icon-hamburger-btn {
+	padding: 0.5em 1.5em;
+	color: #705C43;
+	border-color: #705C43;
+	background: #FFFFFF;
+	border-radius: 6px;
+	margin-left: 1em;
+}
 
 .menu-container {
   margin: 0;
