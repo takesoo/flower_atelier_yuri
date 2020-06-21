@@ -18,22 +18,22 @@ img {
 }
 a:link {
 	TEXT-DECORATION: none !important;
-	color: #705C43 !important;
+	color: #515050 !important;
 
 }
 a:visited {
 	TEXT-DECORATION: none !important;
-	color: #705C43 !important;
+	color: #515050 !important;
 
 }
 a:hover {
 	TEXT-DECORATION: none !important; 
-	color: #8A7253 !important;
+	color: #515050 !important;
 
 }
 a:active {
 	TEXT-DECORATION: none !important;
-	color: #705C43 !important;
+	color: #515050 !important;
 
 }
 
@@ -643,7 +643,7 @@ h1 {
 	.head-navi>ul>li{
 		list-style-type:none;
 		width: 15em;
-		color: #8A7253;
+		color: #515050;
 	}
 	
 	.head-navibar{
