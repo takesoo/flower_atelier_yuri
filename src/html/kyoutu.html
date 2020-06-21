@@ -48,24 +48,41 @@
 
   <!-- スマホ用メニュー -->
   <div class="sp-header">
-    <div class="icon-hamburger">
-      <button class="icon-hamburger-btn">
+    <div class="icon-search">
+      <button class="icon-search-btn overlay-btn" name="search-btn">
         <i class="fas fa-search"></i>
-        <!-- <span>SEARCH</span> -->
       </button>
     </div>
     <div class="icon-hamburger">
       <button class="icon-hamburger-btn">
         <i class="fas fa-shopping-cart"></i>
-        <!-- <span>CART</span> -->
       </button>
     </div>
     <div class="icon-hamburger">
-      <button class="icon-hamburger-btn">
+      <button class="icon-hamburger-btn overlay-btn" name="menu-btn">
         <i class="fas fa-bars"></i>
-        <!-- <span>MENU</span> -->
       </button>
     </div>
+
+    <!-- 検索メニュー -->
+    <div class="search-container">
+      <form action="<{$product_search_url}>" method="GET" />
+				<{$product_search_mode}><br>
+        <label for="cid">カテゴリー：</label>
+        <select name="cid" class="formfield1">
+          <option value="">全ての商品から</option>
+          <{section name=num loop=$category}>
+          <option value="<{$category[num].id}>"><{$category[num].name}></option>
+          <{/section}>
+        </select><br>
+        <label for="num">商品名：</label>
+        <input name="keyword" type="text" class="formfield2"/><br>
+        <input type="image" class="button" src="http://img13.shop-pro.jp/PA01089/996/etc/search-button.gif" alt="商品検索" />
+      </form>
+    </div>
+
+
+    <!-- モーダルメニュー -->
     <nav class="menu-container">
       <ul class="menu">
         <li class="menu-item">
@@ -124,28 +141,28 @@
 <!-- PC用サイドメニュー -->
   <div id="side">
   	<div class="searchbox">
-    <form action="<{$product_search_url}>" method="GET" />
+      <form action="<{$product_search_url}>" method="GET" />
 				<{$product_search_mode}>
 
-      <select name="cid" class="formfield1">
-        <option value="">全ての商品から</option>
-        <{section name=num loop=$category}>
-        <option value="<{$category[num].id}>"><{$category[num].name}></option>
-        <{/section}>
-      </select>
-      <input name="keyword" type="text" class="formfield2"/>
-      <input type="image" class="button" src="http://img13.shop-pro.jp/PA01089/996/etc/search-button.gif" alt="商品検索" />
-    </form>
-  </div>
-  <p class="side_title"><img src="http://img13.shop-pro.jp/PA01089/996/etc/sidemenu_title.gif" alt="MENU" /></p>
-  <ul>
-    <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621194&csid=0" onmouseover=this.textContent='お花' onmouseout=this.textContent='FLOWER'>FLOWER</a></li>
-    <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621197&csid=0" onmouseover=this.textContent='ハーブ' onmouseout=this.textContent='HERB'>HERB</a></li>
-    <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621199&csid=0" onmouseover=this.textContent='キャンドル' onmouseout=this.textContent='CANDLE'>CANDLE</a></li>
-    <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=970689&csid=0" onmouseover=this.textContent='雑貨' onmouseout=this.textContent='GOODS'>GOODS</a></li>
-    <li><a href="http://www.flower-atelier-yuri.com/?mode=f4" onmouseover=this.textContent='お買い物代行' onmouseout=this.textContent='IMPORT'>IMPORT</a></li>
-    <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621211&csid=0" onmouseover=this.textContent='レッスン' onmouseout=this.textContent='LESSON'>LESSON</a></li>
-</ul>
+        <select name="cid" class="formfield1">
+          <option value="">全ての商品から</option>
+          <{section name=num loop=$category}>
+          <option value="<{$category[num].id}>"><{$category[num].name}></option>
+          <{/section}>
+        </select>
+        <input name="keyword" type="text" class="formfield2"/>
+        <input type="image" class="button" src="http://img13.shop-pro.jp/PA01089/996/etc/search-button.gif" alt="商品検索" />
+      </form>
+    </div>
+    <p class="side_title"><img src="http://img13.shop-pro.jp/PA01089/996/etc/sidemenu_title.gif" alt="MENU" /></p>
+    <ul>
+      <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621194&csid=0" onmouseover=this.textContent='お花' onmouseout=this.textContent='FLOWER'>FLOWER</a></li>
+      <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621197&csid=0" onmouseover=this.textContent='ハーブ' onmouseout=this.textContent='HERB'>HERB</a></li>
+      <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621199&csid=0" onmouseover=this.textContent='キャンドル' onmouseout=this.textContent='CANDLE'>CANDLE</a></li>
+      <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=970689&csid=0" onmouseover=this.textContent='雑貨' onmouseout=this.textContent='GOODS'>GOODS</a></li>
+      <li><a href="http://www.flower-atelier-yuri.com/?mode=f4" onmouseover=this.textContent='お買い物代行' onmouseout=this.textContent='IMPORT'>IMPORT</a></li>
+      <li><a href="http://www.flower-atelier-yuri.com/?mode=cate&cbid=2621211&csid=0" onmouseover=this.textContent='レッスン' onmouseout=this.textContent='LESSON'>LESSON</a></li>
+    </ul>
     <p class="side_title"><img src="http://img13.shop-pro.jp/PA01089/996/etc/sideinfo_title.gif" alt="INFORMATION" /></p>
     <p class="side_infotxt">
       本日○○○○のフラワーが<br />
@@ -248,6 +265,7 @@
   </p>
 </div>
 
+<div id="modal-overlay"></div>
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -296,14 +314,27 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 </script>
 
 <script>
-  jQuery('.icon-hamburger').on('click', function() {
-    jQuery('body').append('<div id="modal-overlay"></div>');
+  // モーダル表示
+  jQuery('.overlay-btn').on('click', function() {
     jQuery('#modal-overlay').fadeIn('1500');
-    jQuery('.menu-container .menu').fadeIn('1500');
+    switch (this.name) {
+      case "search-btn":
+        console.log($('.search-container'))
+        jQuery('.search-container').fadeIn('1500');
+        break;
+    
+      case "menu-btn":
+        console.log("this is menu-btn")
+        jQuery('.menu-container .menu').fadeIn('1500');
+        break;
+    }
+    
   });
 
+  // モーダル非表示
   jQuery(document).on('click', '#modal-overlay', function() {
     jQuery('#modal-overlay').fadeOut('1500');
     jQuery('.menu-container .menu').fadeOut('1500');
+    jQuery('.search-container').fadeOut('1500');
   });
 </script>

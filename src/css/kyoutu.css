@@ -679,16 +679,25 @@ h1 {
 	}
 }
 
-/* モーダル表示 */
+/* 検索メニュー表示 */
+
+.icon-search-btn {
+	padding: 0.5em 1.0em;
+	color: #515050;
+	border: none;
+	background: #FFFFFF;
+}
+
+/* 検索メニュー表示ここまで */
+
+
+/* モーダルメニュー表示 */
 
 .icon-hamburger-btn {
 	padding: 0.5em 1.0em;
 	color: #515050;
 	border: none;
-	/* border-color: #515050; */
 	background: #FFFFFF;
-	/* border-radius: 6px; */
-	/* margin-left: 1em; */
 }
 
 .menu-container {
@@ -750,7 +759,7 @@ h1 {
 		justify-content: space-between;
 	}
 
-  .menu-container .menu {
+  .menu-container .menu, .search-container {
     -webkit-transform: translate(-50%, -50%);
     background: #fff;
     display: none;
@@ -771,7 +780,7 @@ h1 {
   }
 }
 
-/* モーダル表示ここまで */
+/* モーダルメニュー表示ここまで */
 
 /*****************************************************
 
@@ -850,7 +859,7 @@ h1 {
 	margin-left:0px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
 	.foot-shopinfo_infotxt ul li{
 		padding: 0 1em;
 		border-right: 0.5px solid #3A3A3A;
