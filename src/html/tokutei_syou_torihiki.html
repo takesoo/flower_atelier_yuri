@@ -163,12 +163,14 @@
     </div>
 <a name="delivery"></a>
 <h3><a name="4" id="4"></a>配送方法・送料について</h3>
-    <div class="indent"><table width="100%">
-<{section name=num loop=$sk_delivery}>
+    <div class="indent">
+      <table width="100%">
+        <{section name=num loop=$sk_delivery}>
         <tr>
           <td nowrap="nowrap" class="td_yellow"><{if $sk_delivery[num].img_url != "" }><img src="<{$sk_delivery[num].img_url}>" align="absmiddle" /><{/if}><{$sk_delivery[num].name}></td>
           <td class="td_white"><{$sk_delivery[num].other}></td>
         </tr>
-<{/section}>
+        <{/section}>
       </table>
+      <img src="https://img13.shop-pro.jp/PA01089/996/etc/kuroneko.png?cmsp_timestamp=20200621180700" alt="送料一覧">
     </div></div>
