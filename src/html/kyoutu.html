@@ -67,16 +67,20 @@
     <!-- 検索メニュー -->
     <div class="search-container">
       <form action="<{$product_search_url}>" method="GET" />
-				<{$product_search_mode}><br>
-        <label for="cid">カテゴリー：</label>
-        <select name="cid" class="formfield1">
-          <option value="">全ての商品から</option>
-          <{section name=num loop=$category}>
-          <option value="<{$category[num].id}>"><{$category[num].name}></option>
-          <{/section}>
-        </select><br>
-        <label for="num">商品名：</label>
-        <input name="keyword" type="text" class="formfield2"/><br>
+				<{$product_search_mode}>
+        <div class="search-part">
+          <label for="cid">カテゴリー：</label>
+          <select name="cid" class="formfield1">
+            <option value="">全ての商品から</option>
+            <{section name=num loop=$category}>
+            <option value="<{$category[num].id}>"><{$category[num].name}></option>
+            <{/section}>
+          </select>
+        </div>
+        <div class="search-part">
+          <label for="num">商品名：</label>
+          <input name="keyword" type="text" class="formfield2"/>
+        </div>
         <input type="image" class="button" src="http://img13.shop-pro.jp/PA01089/996/etc/search-button.gif" alt="商品検索" />
       </form>
     </div>

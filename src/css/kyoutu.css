@@ -688,6 +688,14 @@ h1 {
 	background: #FFFFFF;
 }
 
+.search-container {
+	padding: 3em;
+}
+
+.search-part {
+	margin-bottom: 1em;
+}
+
 /* 検索メニュー表示ここまで */
 
 
