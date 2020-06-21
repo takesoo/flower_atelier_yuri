@@ -46,12 +46,24 @@
       </div>
   </div>
 
-  <!-- スマホ用サイドメニュー -->
+  <!-- スマホ用メニュー -->
   <div class="sp-header">
     <div class="icon-hamburger">
       <button class="icon-hamburger-btn">
+        <i class="fas fa-search"></i>
+        <!-- <span>SEARCH</span> -->
+      </button>
+    </div>
+    <div class="icon-hamburger">
+      <button class="icon-hamburger-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <!-- <span>CART</span> -->
+      </button>
+    </div>
+    <div class="icon-hamburger">
+      <button class="icon-hamburger-btn">
         <i class="fas fa-bars"></i>
-        <span>MENU</span>
+        <!-- <span>MENU</span> -->
       </button>
     </div>
     <nav class="menu-container">
@@ -281,16 +293,6 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
     }
   }, false)
 
-  // スマホサイドメニューお買い物サブカテゴリープルダウン 
-  let sp_header_shopping_btn = document.getElementById('sp_header_shopping_btn')
-  let sp_header_shopping_category = document.getElementById('sp_header_shopping_category')
-  sp_header_shopping_btn.addEventListener('click', ()=>{
-    if (sp_header_shopping_category.classList.contains('active')) {
-      sp_header_shopping_category.classList.remove('active')
-    } else {
-      sp_header_shopping_category.classList.add('active')
-    }
-  }, false)
 </script>
 
 <script>

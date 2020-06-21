@@ -658,10 +658,16 @@ h1 {
 @media screen and (max-width: 768px){
 	#header-wrap{
 		width: 100%;
+		padding: 30px 0 15px;
+		display: flex;
+		justify-content: space-between;
+		background: url(http://img13.shop-pro.jp/PA01089/996/etc/foot_line.gif) repeat-x bottom;
 	}
 
 	.header-area{
-		width: 100%;
+		width: auto;
+		margin: 0;
+		margin-left: 1em;
 	}
 
 	.header-area img {
@@ -676,12 +682,13 @@ h1 {
 /* モーダル表示 */
 
 .icon-hamburger-btn {
-	padding: 0.5em 1.5em;
-	color: #705C43;
-	border-color: #705C43;
+	padding: 0.5em 1.0em;
+	color: #515050;
+	border: none;
+	/* border-color: #515050; */
 	background: #FFFFFF;
-	border-radius: 6px;
-	margin-left: 1em;
+	/* border-radius: 6px; */
+	/* margin-left: 1em; */
 }
 
 .menu-container {
@@ -739,7 +746,8 @@ h1 {
 
 @media screen and (max-width: 768px) {
 	.sp-header {
-		display: inline;
+		display: flex;
+		justify-content: space-between;
 	}
 
   .menu-container .menu {
