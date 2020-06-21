@@ -679,9 +679,9 @@ h1 {
 	}
 }
 
-/* 検索メニュー表示 */
+/* モーダルメニュー表示 */
 
-.icon-search-btn {
+.icon-hamburger-btn, .icon-search-btn, .icon-cart-btn {
 	padding: 0.5em 1.0em;
 	color: #515050;
 	border: none;
@@ -696,17 +696,6 @@ h1 {
 	margin-bottom: 1em;
 }
 
-/* 検索メニュー表示ここまで */
-
-
-/* モーダルメニュー表示 */
-
-.icon-hamburger-btn {
-	padding: 0.5em 1.0em;
-	color: #515050;
-	border: none;
-	background: #FFFFFF;
-}
 
 .menu-container {
   margin: 0;
