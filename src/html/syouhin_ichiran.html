@@ -124,10 +124,9 @@
         </div>
         <!-- 4個で改行(最後は含まない) -->
         <{if $smarty.section.num.iteration % 4 == 0 and $smarty.section.num.last == false}>
-          <div class="clear"></div>
         <{/if}>
       <{/section}>
-      <div class="clear"></div>
+      <!-- <div class="clear"></div> -->
     </div>
 
     <div class="indent">全 [<span><{$productlist_num}></span>] 商品中 [<span><{$productlist_snum}></span>-<span><{$productlist_enum}></span>] 商品を表示しています。

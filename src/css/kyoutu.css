@@ -236,6 +236,8 @@ h1 {
 	list-style-type: none;
 	display: inline;
 }
+
+/* #main.indentが各ページにあるのであえて共通に記載。20200627久保田 */
 #main {
 	margin-top: 15px;
 }
@@ -391,13 +393,20 @@ h1 {
 }
 #main .item_box4 {
 	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
+#main .item_box4::after {
+	content:'';
+	display:block;
+	width: 150px;
+	height:0;
+}
+
 #main .item_box5 {
-	float: left;
 	width: 146px;
 	margin-bottom: 15px;
-	padding-left: 11px;
-	padding-right: 11px;
 }
 
 #main .item_pic {
