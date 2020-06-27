@@ -130,9 +130,22 @@
     </div>
 
     <div class="indent">全 [<span><{$productlist_num}></span>] 商品中 [<span><{$productlist_snum}></span>-<span><{$productlist_enum}></span>] 商品を表示しています。
-      <div class="pagenavi"><{if $productlist_prev_page != ""}><a href="<{$productlist_prev_page}>">前のページ</a><{else}>前のページ<{/if}> | <{if $productlist_next_page != ""}><a href="<{$productlist_next_page}>">次のページ</a><{else}>次のページ<{/if}></div>
+      <div class="pagenavi">
+        <{if $productlist_prev_page != ""}>
+          <a href="<{$productlist_prev_page}>">前のページ</a>
+        <{else}>
+          前のページ
+        <{/if}>
+         | 
+        <{if $productlist_next_page != ""}>
+          <a href="<{$productlist_next_page}>">次のページ</a>
+        <{else}>
+          次のページ
+        <{/if}>
+      </div>
     </div>
     <{else}>
     <!-- 該当商品がないとき -->
     <div class="indent"><{if $subcategory_num == 0}>該当する商品がありません<{/if}></div>
-    <{/if}></div>
+    <{/if}>
+  </div>

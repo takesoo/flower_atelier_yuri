@@ -344,3 +344,13 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
     jQuery('.search-container').fadeOut('1500');
   });
 </script>
+
+<script>
+  // 商品一覧最後の行を左寄せ
+  $(function(){
+    $('.item_box5').each(function(index,element){
+      var w = $(element).width()
+      $('.item_box4').append('<div style="height:0; width:'+ w +'px; margin:0;"></div>')
+    })
+  })
+</script>
