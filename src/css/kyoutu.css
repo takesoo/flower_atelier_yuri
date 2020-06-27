@@ -436,8 +436,10 @@ h1 {
 	margin-top: 15px;
 }
 #main .content_box {
-	width: 655px;
+	width: 100%;
 	margin-bottom: 15px;
+	display: flex;
+	flex-wrap: wrap;
 }
 #main .content_box2 {
 	width: 675px;
@@ -499,7 +501,7 @@ h1 {
 	background-color: #F8F7F2;
 	padding: 10px;
 	border: 1px solid #CCCCCC;
-	width: 150px;
+	width: 25%;
 }
 #main .pagenavi {
 	margin-top: 15px;
@@ -538,14 +540,14 @@ h1 {
 	list-style-type: none;
 }
 #main .guide_link {
-	float: left;
 	background-image: url(http://img13.shop-pro.jp/PA01089/996/etc/arrow2.gif);
 	background-repeat: no-repeat;
 	background-position: left;
 	padding-right: 10px;
 	padding-left: 18px;
-	width: 135px;
+	width: 155px;
 }
+
 .font_b {
 	font-weight: bold;
 }

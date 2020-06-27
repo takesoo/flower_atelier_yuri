@@ -155,7 +155,7 @@
       <table width="100%">
 <{section name=num loop=$sk_payment}>
         <tr>
-          <td nowrap="nowrap" class="td_yellow"><{if $sk_payment[num].img_url != "" }><img src="<{$sk_payment[num].img_url}>" align="absmiddle" /><{/if}><{$sk_payment[num].name}></td>
+          <td class="td_yellow"><{if $sk_payment[num].img_url != "" }><img src="<{$sk_payment[num].img_url}>" align="absmiddle" /><{/if}><{$sk_payment[num].name}></td>
           <td class="td_white"><{if $sk_payment[num].card_img != "" }><{$sk_payment[num].card_img}><br /><{/if}><{$sk_payment[num].other}></td>
         </tr>
 <{/section}>
@@ -167,7 +167,7 @@
       <table width="100%">
         <{section name=num loop=$sk_delivery}>
         <tr>
-          <td nowrap="nowrap" class="td_yellow"><{if $sk_delivery[num].img_url != "" }><img src="<{$sk_delivery[num].img_url}>" align="absmiddle" /><{/if}><{$sk_delivery[num].name}></td>
+          <td class="td_yellow"><{if $sk_delivery[num].img_url != "" }><img src="<{$sk_delivery[num].img_url}>" align="absmiddle" /><{/if}><{$sk_delivery[num].name}></td>
           <td class="td_white"><{$sk_delivery[num].other}></td>
         </tr>
         <{/section}>
