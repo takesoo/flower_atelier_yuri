@@ -1044,4 +1044,14 @@ h1 {
 	overflow: scroll;
 }
 
+@media screen and (max-width: 768px){
+	#import, #lesson {
+		float: none;
+		width: 90%;
+		margin: 20px auto 0;
+	}
 
+	.instagram-media {
+		width: 100% !important;
+	}
+}
