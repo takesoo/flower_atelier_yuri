@@ -232,6 +232,10 @@ h1 {
 
 /* 左サイド追加CSS（ここまで） */
 
+#pankuzu {
+	padding-left: 1em;
+}
+
 #pankuzu li {
 	list-style-type: none;
 	display: inline;
