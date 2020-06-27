@@ -131,17 +131,46 @@
 
     <div class="indent">全 [<span><{$productlist_num}></span>] 商品中 [<span><{$productlist_snum}></span>-<span><{$productlist_enum}></span>] 商品を表示しています。
       <div class="pagenavi">
-        <{if $productlist_prev_page != ""}>
-          <a href="<{$productlist_prev_page}>">前のページ</a>
-        <{else}>
-          前のページ
+        <{assign var='products_per_page' value=12}>
+ 
+        <!-- 必要な変数を設定 -->
+        <{assign var='current_page' value=1}>
+        <{if $productlist_prev_page != ''}>
+          <{assign var='productlist_page_url' value=$productlist_prev_page|regex_replace:'|page=\d+|':'page='}>
+          <{assign var='current_page' value=$productlist_prev_page|regex_replace:'|^.*page=(\d+).*|':'$1'}>
+          <{assign var='current_page' value=$current_page+1}>
+        <{elseif $productlist_next_page != ''}>
+          <{assign var='productlist_page_url' value=$productlist_next_page|regex_replace:'|page=\d+|':'page='}>
+          <{assign var='current_page' value=$productlist_next_page|regex_replace:'|^.*page=(\d+).*|':'$1'}>
+          <{assign var='current_page' value=$current_page-1}>
         <{/if}>
-         | 
-        <{if $productlist_next_page != ""}>
-          <a href="<{$productlist_next_page}>">次のページ</a>
-        <{else}>
-          次のページ
-        <{/if}>
+         
+        <{assign var='page_max' value=0}>
+        <{assign var='tmp_page_count' value=$productlist_num}>
+        <{section name=page start=1 loop=$productlist_num}>
+          <{if $tmp_page_count > 0}>
+            <{assign var='page_max' value=$page_max+1}>
+          <{/if}>
+          <{assign var='tmp_page_count' value=$tmp_page_count-$products_per_page}>
+        <{/section}>
+         
+        <!-- ここから表示 -->
+        <ul class="pager">
+          <{if $productlist_prev_page != ""}>
+            <li><a href="<{$productlist_prev_page}>">< 前へ</a></li>
+          <{/if}>
+          <{section name=page start=1 loop=$page_max+1}>
+            <{assign var='tmp_page' value=$smarty.section.page.index}>
+            <{if $current_page == $tmp_page}>
+              <li class="current"><span><{$tmp_page}></span></li>
+            <{else}>
+              <li><a href="<{$productlist_page_url}><{$tmp_page}>"><{$tmp_page}></a></li>
+            <{/if}>
+          <{/section}>
+          <{if $productlist_next_page != ""}>
+            <li><a href="<{$productlist_next_page}>">次へ ></a></li>
+          <{/if}>
+        </ul>
       </div>
     </div>
     <{else}>
