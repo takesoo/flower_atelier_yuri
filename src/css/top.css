@@ -142,3 +142,10 @@ a:active {
 .top_btn{
 	display:none;
 }
+
+@media screen and (max-width: 768px){
+	.top-information {
+		margin: 1em 0 0;
+		text-align: center;
+	}
+}

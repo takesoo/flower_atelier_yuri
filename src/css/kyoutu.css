@@ -903,6 +903,16 @@ h1 {
 		max-width: 994px;
 	}
 
+	.foot-shopinfo_link{
+		display: block;
+		font-size: 0.75em;
+	}
+
+	.foot-shopinfo_link li {
+		width: 100%;	
+		margin-bottom: 0.5em;
+	}
+
 	.foot-shopinfo_infotxt ul{
 		display: block;
 	}
