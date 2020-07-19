@@ -233,7 +233,7 @@ h1 {
 /* 左サイド追加CSS（ここまで） */
 
 #pankuzu {
-	padding-left: 1em;
+	padding: 0 1em 1em;
 }
 
 #pankuzu li {
