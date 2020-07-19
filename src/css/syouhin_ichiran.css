@@ -1,3 +1,7 @@
+.item_box4{
+	font-family: 'Noto Serif JP';
+}
+
 .order_hed{
 	width:765px;
 	text-align:right;
@@ -6,6 +10,16 @@
 	color:#666666;
 }
 
-	.order_hed p{
-		margin:10px 0px 0px;
-	}
+.order_hed p{
+	margin:10px 0px 0px;
+}
+
+.pager {
+	display: flex;
+    justify-content: center;
+}
+
+.pager>li{
+	margin: 0 1em;
+}
+
